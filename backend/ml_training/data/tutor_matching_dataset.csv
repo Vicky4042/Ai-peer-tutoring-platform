@@ -1,0 +1,1201 @@
+learner_subject,tutor_subjects,tutor_expertise_1_to_5,learner_learning_preference,tutor_learning_preference,learner_availability,tutor_availability,subject_match,preference_match,availability_match,match_label
+DBMS,Java,3,Practical,Practical,Morning,Evening,0,1,0,0
+DBMS,Web Development,4,Visual,Visual,Morning,Morning,0,1,1,0
+Web Development,Web Development,2,Discussion,Practical,Afternoon,Evening,1,0,0,0
+Cloud Computing,Cloud Computing,2,Discussion,Reading,Afternoon,Morning,1,0,0,0
+Cloud Computing,Java|Cloud Computing|Data Structures,1,Reading,Reading,Evening,Afternoon,1,1,0,1
+DBMS,Web Development|Java|Data Structures|DBMS,5,Reading,Reading,Evening,Morning,1,1,0,1
+Java,Cloud Computing|SQL,1,Practical,Visual,Afternoon,Afternoon,0,0,1,0
+Cloud Computing,Python|SQL|DBMS,2,Reading,Visual,Evening,Evening,0,0,1,0
+DBMS,Python|Data Structures,4,Reading,Practical,Evening,Afternoon,0,0,0,0
+Cloud Computing,Python,1,Reading,Discussion,Afternoon,Morning,0,0,0,0
+Web Development,Python|DBMS|Data Structures,4,Discussion,Practical,Afternoon,Morning,0,0,0,0
+Web Development,DBMS|Web Development|Data Structures,5,Discussion,Reading,Morning,Morning,1,0,1,1
+Java,Cloud Computing,1,Practical,Practical,Evening,Afternoon,0,1,0,0
+Data Structures,Web Development|Data Structures|Cloud Computing|SQL,5,Visual,Visual,Evening,Evening,1,1,1,1
+Cloud Computing,Java|SQL|Data Structures,2,Discussion,Visual,Evening,Evening,0,0,1,0
+Web Development,Web Development|Java,3,Practical,Practical,Afternoon,Morning,1,1,0,1
+Cloud Computing,Web Development,3,Discussion,Visual,Morning,Afternoon,0,0,0,0
+Cloud Computing,Python|Java|Cloud Computing,5,Visual,Visual,Evening,Afternoon,1,1,0,1
+Cloud Computing,Python|DBMS,4,Practical,Reading,Evening,Evening,0,0,1,0
+Python,DBMS|SQL,4,Reading,Discussion,Evening,Afternoon,0,0,0,0
+Python,SQL,1,Practical,Practical,Morning,Morning,0,1,1,0
+Java,Java|Cloud Computing,3,Visual,Practical,Afternoon,Evening,1,0,0,0
+Web Development,DBMS|Web Development,5,Discussion,Practical,Afternoon,Afternoon,1,0,1,1
+Java,SQL|Data Structures|DBMS|Web Development,1,Visual,Visual,Afternoon,Evening,0,1,0,0
+Cloud Computing,Python,2,Practical,Discussion,Morning,Afternoon,0,0,0,0
+Data Structures,Cloud Computing|Java,4,Visual,Visual,Evening,Evening,0,1,1,0
+Java,Python|Data Structures,4,Discussion,Practical,Afternoon,Morning,0,0,0,0
+Java,SQL|Data Structures|Cloud Computing|DBMS,5,Discussion,Practical,Morning,Afternoon,0,0,0,0
+Java,DBMS,3,Visual,Visual,Evening,Afternoon,0,1,0,0
+Cloud Computing,Java|Web Development,1,Practical,Visual,Evening,Morning,0,0,0,0
+Python,Java|Web Development|Python|Cloud Computing,5,Visual,Discussion,Evening,Evening,1,0,1,1
+SQL,Python|DBMS|SQL,2,Reading,Discussion,Morning,Evening,1,0,0,0
+Data Structures,Cloud Computing|Java|DBMS,4,Visual,Visual,Evening,Morning,0,1,0,0
+Python,Java|Python|SQL,3,Practical,Discussion,Evening,Evening,1,0,1,1
+Cloud Computing,DBMS,5,Reading,Visual,Morning,Afternoon,0,0,0,0
+Java,SQL|Cloud Computing,5,Practical,Reading,Morning,Evening,0,0,0,0
+SQL,SQL|Java|DBMS|Data Structures,3,Visual,Visual,Afternoon,Morning,1,1,0,1
+SQL,DBMS|Data Structures,5,Discussion,Visual,Morning,Morning,0,0,1,0
+DBMS,Web Development|Java,3,Practical,Discussion,Morning,Morning,0,0,1,0
+Cloud Computing,SQL,2,Practical,Visual,Afternoon,Evening,0,0,0,0
+Data Structures,Python|Cloud Computing,2,Discussion,Visual,Morning,Evening,0,0,0,0
+Cloud Computing,Cloud Computing|DBMS|Python|SQL,2,Visual,Discussion,Morning,Afternoon,1,0,0,0
+Cloud Computing,SQL|Cloud Computing|Python|Web Development,1,Practical,Discussion,Afternoon,Afternoon,1,0,1,1
+Cloud Computing,SQL|DBMS|Web Development,4,Reading,Visual,Morning,Afternoon,0,0,0,0
+SQL,Java,5,Discussion,Reading,Evening,Afternoon,0,0,0,0
+Web Development,Data Structures,5,Practical,Reading,Morning,Evening,0,0,0,0
+Web Development,SQL|Data Structures,1,Reading,Reading,Evening,Morning,0,1,0,0
+SQL,DBMS|Data Structures|SQL,4,Reading,Practical,Morning,Afternoon,1,0,0,1
+Data Structures,Web Development|Cloud Computing,3,Discussion,Visual,Afternoon,Afternoon,0,0,1,0
+Cloud Computing,Data Structures|Cloud Computing|DBMS,2,Discussion,Practical,Evening,Morning,1,0,0,0
+DBMS,Java|Python|SQL,2,Practical,Practical,Morning,Morning,0,1,1,0
+Data Structures,Data Structures,4,Practical,Discussion,Afternoon,Afternoon,1,0,1,1
+DBMS,Cloud Computing,1,Discussion,Practical,Morning,Evening,0,0,0,0
+Java,Cloud Computing|Java,4,Practical,Discussion,Evening,Evening,1,0,1,1
+Web Development,Cloud Computing|Data Structures|Web Development,5,Discussion,Discussion,Morning,Evening,1,1,0,1
+Data Structures,Cloud Computing|Python|SQL,5,Discussion,Practical,Afternoon,Afternoon,0,0,1,0
+SQL,SQL|Cloud Computing,3,Visual,Practical,Morning,Morning,1,0,1,1
+Python,Java|Data Structures,4,Reading,Discussion,Afternoon,Morning,0,0,0,0
+Data Structures,Cloud Computing|Web Development|Java|Data Structures,4,Visual,Reading,Afternoon,Afternoon,1,0,1,1
+Cloud Computing,Web Development|DBMS|Cloud Computing|Python,4,Practical,Reading,Afternoon,Afternoon,1,0,1,0
+SQL,DBMS|Python|Data Structures|Cloud Computing,5,Visual,Discussion,Evening,Evening,0,0,1,0
+Java,Python|Data Structures|Cloud Computing|Java,3,Discussion,Reading,Morning,Afternoon,1,0,0,0
+Cloud Computing,SQL|Data Structures|Cloud Computing|Java,4,Visual,Visual,Afternoon,Morning,1,1,0,1
+Cloud Computing,Cloud Computing,1,Practical,Practical,Morning,Evening,1,1,0,1
+Python,DBMS|Java|Web Development|Python,4,Reading,Reading,Morning,Evening,1,1,0,1
+DBMS,Cloud Computing,2,Reading,Visual,Evening,Morning,0,0,0,0
+Web Development,Data Structures|DBMS|Python|Java,5,Practical,Visual,Evening,Afternoon,0,0,0,0
+Web Development,Cloud Computing,5,Visual,Reading,Evening,Afternoon,0,0,0,0
+Java,Java|Data Structures|DBMS,1,Discussion,Reading,Evening,Afternoon,1,0,0,0
+Data Structures,DBMS|Web Development,3,Discussion,Discussion,Afternoon,Evening,0,1,0,0
+SQL,Cloud Computing|Java,3,Discussion,Practical,Afternoon,Evening,0,0,0,0
+Data Structures,Java|Data Structures|SQL,2,Discussion,Practical,Afternoon,Afternoon,1,0,1,1
+Web Development,Web Development|Java|Cloud Computing,2,Visual,Practical,Evening,Afternoon,1,0,0,0
+Cloud Computing,DBMS|Data Structures,4,Discussion,Visual,Morning,Afternoon,0,0,0,0
+DBMS,SQL|DBMS,5,Reading,Discussion,Evening,Evening,1,0,1,1
+DBMS,SQL|DBMS|Data Structures,3,Reading,Reading,Morning,Morning,1,1,1,1
+SQL,DBMS,5,Practical,Practical,Morning,Evening,0,1,0,0
+DBMS,Java|Python|SQL,2,Reading,Practical,Afternoon,Morning,0,0,0,0
+Python,Java|Cloud Computing|Web Development,3,Practical,Discussion,Morning,Morning,0,0,1,0
+Data Structures,Data Structures|SQL|Python|Java,3,Discussion,Visual,Morning,Afternoon,1,0,0,0
+Web Development,Python,2,Reading,Visual,Morning,Morning,0,0,1,0
+Data Structures,Cloud Computing|Web Development,4,Discussion,Discussion,Afternoon,Evening,0,1,0,0
+SQL,Web Development,1,Practical,Practical,Afternoon,Evening,0,1,0,0
+Python,Web Development|Java,2,Visual,Discussion,Afternoon,Evening,0,0,0,0
+SQL,Python,3,Reading,Discussion,Morning,Evening,0,0,0,0
+SQL,Data Structures|Java,5,Practical,Practical,Afternoon,Morning,0,1,0,0
+Python,Web Development|DBMS|Cloud Computing,3,Discussion,Visual,Afternoon,Evening,0,0,0,0
+Data Structures,Web Development|Cloud Computing|Data Structures,4,Visual,Visual,Afternoon,Evening,1,1,0,1
+SQL,Java,2,Visual,Reading,Evening,Morning,0,0,0,0
+Python,Web Development|DBMS|Data Structures|SQL,2,Discussion,Discussion,Morning,Afternoon,0,1,0,0
+SQL,DBMS|Java|Python,3,Discussion,Discussion,Afternoon,Evening,0,1,0,0
+Cloud Computing,Data Structures,1,Reading,Reading,Afternoon,Morning,0,1,0,0
+Data Structures,DBMS,5,Discussion,Discussion,Morning,Morning,0,1,1,1
+Web Development,DBMS|Data Structures|Java|Python,3,Practical,Reading,Afternoon,Evening,0,0,0,0
+Java,DBMS|Python,3,Visual,Discussion,Morning,Morning,0,0,1,0
+Java,Java|DBMS|Python|Data Structures,3,Reading,Discussion,Afternoon,Afternoon,1,0,1,1
+Web Development,Data Structures|Python,5,Practical,Visual,Afternoon,Afternoon,0,0,1,0
+Cloud Computing,Cloud Computing|Java|SQL,3,Discussion,Practical,Afternoon,Evening,1,0,0,0
+SQL,Data Structures|SQL|Python|Web Development,5,Discussion,Practical,Afternoon,Morning,1,0,0,1
+Data Structures,Data Structures|DBMS|Python|Cloud Computing,1,Practical,Reading,Morning,Afternoon,1,0,0,0
+Data Structures,DBMS,2,Discussion,Practical,Morning,Afternoon,0,0,0,0
+SQL,Web Development|DBMS|Data Structures,1,Reading,Discussion,Afternoon,Evening,0,0,0,0
+Cloud Computing,Cloud Computing|Web Development|Java|DBMS,2,Reading,Practical,Evening,Morning,1,0,0,0
+Java,Data Structures,2,Reading,Visual,Morning,Afternoon,0,0,0,0
+SQL,SQL|Data Structures|Python,2,Discussion,Practical,Morning,Morning,1,0,1,1
+Cloud Computing,Web Development|DBMS|Python|Data Structures,5,Practical,Practical,Afternoon,Evening,0,1,0,0
+SQL,Cloud Computing,4,Reading,Practical,Morning,Afternoon,0,0,0,0
+Web Development,DBMS|Data Structures|SQL,4,Reading,Practical,Afternoon,Afternoon,0,0,1,0
+Data Structures,Web Development|SQL|DBMS,1,Discussion,Reading,Morning,Evening,0,0,0,0
+Cloud Computing,Web Development,4,Reading,Practical,Evening,Afternoon,0,0,0,0
+Python,DBMS|Cloud Computing|Python,1,Visual,Reading,Afternoon,Morning,1,0,0,0
+DBMS,Java|SQL,3,Discussion,Practical,Morning,Morning,0,0,1,0
+SQL,Cloud Computing|Python|SQL,4,Reading,Reading,Morning,Afternoon,1,1,0,1
+Python,Cloud Computing|DBMS,4,Reading,Visual,Afternoon,Morning,0,0,0,0
+Java,SQL|DBMS|Cloud Computing|Data Structures,3,Visual,Practical,Afternoon,Morning,0,0,0,0
+Web Development,Web Development|Python|Java,4,Reading,Discussion,Morning,Morning,1,0,1,0
+Java,Data Structures|Java|DBMS,2,Practical,Discussion,Afternoon,Afternoon,1,0,1,1
+DBMS,Web Development|DBMS|Python|Data Structures,1,Discussion,Discussion,Afternoon,Morning,1,1,0,1
+Python,Data Structures|Python|SQL|Java,3,Reading,Visual,Afternoon,Afternoon,1,0,1,1
+Java,Java|DBMS|Python|Cloud Computing,1,Reading,Practical,Morning,Evening,1,0,0,0
+Cloud Computing,Web Development|Python,2,Reading,Practical,Evening,Morning,0,0,0,0
+Python,Web Development|SQL,2,Visual,Visual,Morning,Morning,0,1,1,0
+Cloud Computing,Web Development|SQL,1,Practical,Reading,Morning,Morning,0,0,1,0
+Web Development,DBMS,1,Discussion,Discussion,Afternoon,Evening,0,1,0,0
+Data Structures,Web Development|Java,5,Reading,Discussion,Evening,Morning,0,0,0,0
+Data Structures,Data Structures|DBMS|Java|Cloud Computing,4,Visual,Visual,Afternoon,Evening,1,1,0,1
+Python,Web Development|DBMS|Cloud Computing,5,Reading,Discussion,Evening,Evening,0,0,1,0
+Web Development,Java|DBMS|Cloud Computing|Python,4,Discussion,Practical,Afternoon,Afternoon,0,0,1,0
+Data Structures,DBMS|Java|SQL|Data Structures,3,Reading,Reading,Morning,Evening,1,1,0,1
+Java,Cloud Computing,1,Visual,Discussion,Morning,Evening,0,0,0,0
+Cloud Computing,Web Development|Java,5,Reading,Visual,Afternoon,Afternoon,0,0,1,0
+Cloud Computing,Cloud Computing|DBMS|Java|SQL,5,Reading,Reading,Morning,Evening,1,1,0,1
+Python,Python|Java|SQL|Web Development,1,Reading,Practical,Afternoon,Evening,1,0,0,0
+Cloud Computing,Web Development,3,Visual,Practical,Afternoon,Evening,0,0,0,0
+SQL,Java|Python|DBMS,5,Discussion,Visual,Morning,Evening,0,0,0,0
+Java,DBMS,5,Practical,Discussion,Afternoon,Afternoon,0,0,1,0
+SQL,DBMS|SQL|Web Development,5,Visual,Visual,Morning,Morning,1,1,1,1
+Java,SQL,4,Discussion,Discussion,Evening,Afternoon,0,1,0,0
+Python,SQL,4,Visual,Reading,Evening,Evening,0,0,1,0
+Web Development,Java|Python|Data Structures,5,Visual,Visual,Morning,Afternoon,0,1,0,0
+Cloud Computing,Cloud Computing|SQL,3,Reading,Visual,Morning,Afternoon,1,0,0,0
+Python,Data Structures|Web Development,2,Reading,Visual,Afternoon,Evening,0,0,0,1
+Java,Java|SQL|Web Development|Data Structures,5,Discussion,Discussion,Afternoon,Morning,1,1,0,1
+SQL,Cloud Computing|Web Development,4,Reading,Visual,Afternoon,Morning,0,0,0,0
+Web Development,Web Development|Java|Data Structures|SQL,3,Practical,Reading,Morning,Morning,1,0,1,1
+Java,Cloud Computing|SQL,3,Practical,Practical,Morning,Morning,0,1,1,0
+Python,Cloud Computing|DBMS,1,Practical,Discussion,Afternoon,Evening,0,0,0,0
+Data Structures,Cloud Computing|DBMS|SQL,2,Discussion,Visual,Afternoon,Afternoon,0,0,1,0
+Cloud Computing,Web Development|Java|SQL,5,Visual,Reading,Afternoon,Afternoon,0,0,1,1
+SQL,Java|DBMS|Cloud Computing,5,Discussion,Discussion,Evening,Evening,0,1,1,1
+DBMS,Data Structures,5,Practical,Reading,Evening,Afternoon,0,0,0,0
+Java,Java|SQL|Cloud Computing|Python,1,Practical,Discussion,Afternoon,Evening,1,0,0,0
+Python,SQL|Cloud Computing|Data Structures,4,Reading,Visual,Evening,Evening,0,0,1,0
+SQL,Web Development,4,Reading,Reading,Evening,Evening,0,1,1,0
+Web Development,SQL|Java,5,Practical,Reading,Afternoon,Evening,0,0,0,0
+Data Structures,Web Development|DBMS,1,Reading,Discussion,Evening,Afternoon,0,0,0,0
+DBMS,DBMS,4,Reading,Visual,Afternoon,Afternoon,1,0,1,1
+Python,Cloud Computing|Data Structures|Python,2,Practical,Practical,Morning,Afternoon,1,1,0,1
+Java,DBMS,3,Practical,Discussion,Morning,Morning,0,0,1,0
+DBMS,DBMS|Data Structures,1,Discussion,Reading,Evening,Evening,1,0,1,1
+Data Structures,Cloud Computing|DBMS|Data Structures,2,Practical,Reading,Afternoon,Morning,1,0,0,0
+Web Development,Data Structures|SQL|Cloud Computing|Web Development,2,Practical,Practical,Afternoon,Morning,1,1,0,1
+Cloud Computing,Web Development|Java|Cloud Computing,1,Reading,Visual,Morning,Afternoon,1,0,0,0
+Web Development,Cloud Computing|Data Structures,1,Practical,Discussion,Afternoon,Morning,0,0,0,0
+Data Structures,Python|Data Structures|Java,3,Practical,Visual,Afternoon,Morning,1,0,0,0
+DBMS,Cloud Computing|Python|DBMS,1,Reading,Discussion,Evening,Morning,1,0,0,0
+Data Structures,Web Development|Java|DBMS|Cloud Computing,3,Practical,Practical,Evening,Evening,0,1,1,0
+Data Structures,Cloud Computing,3,Practical,Reading,Morning,Morning,0,0,1,0
+DBMS,Java|Cloud Computing|Data Structures|DBMS,5,Practical,Practical,Afternoon,Afternoon,1,1,1,0
+SQL,Web Development|Data Structures,2,Visual,Reading,Morning,Evening,0,0,0,0
+Cloud Computing,Data Structures,4,Visual,Discussion,Afternoon,Afternoon,0,0,1,0
+SQL,SQL,2,Visual,Reading,Morning,Morning,1,0,1,1
+SQL,Cloud Computing|DBMS,4,Discussion,Practical,Morning,Morning,0,0,1,0
+Data Structures,SQL,2,Visual,Practical,Morning,Afternoon,0,0,0,0
+Web Development,Cloud Computing|Web Development|Data Structures|SQL,1,Practical,Reading,Afternoon,Morning,1,0,0,0
+SQL,Java|SQL|Data Structures,4,Discussion,Discussion,Afternoon,Morning,1,1,0,1
+Data Structures,Cloud Computing|Web Development|SQL,1,Discussion,Visual,Afternoon,Evening,0,0,0,0
+Python,SQL|Java|DBMS,3,Reading,Reading,Afternoon,Evening,0,1,0,0
+Python,SQL|Data Structures|Java|Cloud Computing,5,Discussion,Reading,Evening,Morning,0,0,0,0
+DBMS,SQL|Web Development|Python|Java,2,Discussion,Visual,Morning,Morning,0,0,1,0
+DBMS,SQL|Data Structures|Web Development,1,Practical,Discussion,Afternoon,Afternoon,0,0,1,0
+Java,Web Development|SQL,4,Reading,Reading,Morning,Morning,0,1,1,1
+Python,Web Development|Data Structures|Cloud Computing|Java,3,Reading,Discussion,Morning,Evening,0,0,0,0
+Data Structures,Java|Python,1,Discussion,Practical,Evening,Afternoon,0,0,0,0
+Cloud Computing,DBMS|SQL|Java,5,Reading,Reading,Morning,Evening,0,1,0,0
+DBMS,Cloud Computing|SQL,5,Practical,Visual,Morning,Morning,0,0,1,0
+Data Structures,SQL,5,Reading,Discussion,Evening,Morning,0,0,0,0
+Java,SQL,4,Discussion,Discussion,Afternoon,Evening,0,1,0,0
+SQL,Data Structures,4,Reading,Practical,Evening,Evening,0,0,1,0
+Cloud Computing,Data Structures|Web Development,1,Visual,Practical,Afternoon,Morning,0,0,0,0
+DBMS,SQL|Web Development,3,Visual,Reading,Morning,Evening,0,0,0,0
+SQL,DBMS|SQL,5,Visual,Practical,Evening,Evening,1,0,1,1
+DBMS,Cloud Computing|Web Development|Java,1,Visual,Visual,Evening,Evening,0,1,1,0
+Python,Web Development|DBMS|Java|Data Structures,5,Reading,Reading,Afternoon,Morning,0,1,0,0
+DBMS,SQL|Data Structures|Java|Web Development,2,Discussion,Discussion,Afternoon,Afternoon,0,1,1,0
+Web Development,SQL|DBMS,3,Reading,Discussion,Morning,Afternoon,0,0,0,0
+Java,Python|Data Structures|Java,3,Discussion,Practical,Morning,Morning,1,0,1,0
+Data Structures,Python|Cloud Computing|SQL|Web Development,2,Practical,Discussion,Evening,Afternoon,0,0,0,0
+SQL,Java|Cloud Computing|Data Structures|Web Development,2,Practical,Reading,Morning,Morning,0,0,1,0
+Web Development,SQL|Web Development|Java|DBMS,4,Practical,Reading,Evening,Afternoon,1,0,0,1
+SQL,Data Structures,1,Practical,Reading,Evening,Afternoon,0,0,0,0
+Web Development,Cloud Computing|Web Development|SQL|Java,2,Visual,Discussion,Afternoon,Afternoon,1,0,1,1
+SQL,Python|Web Development,5,Discussion,Visual,Morning,Morning,0,0,1,0
+SQL,Web Development|Data Structures|Python|Cloud Computing,3,Reading,Practical,Afternoon,Evening,0,0,0,0
+SQL,Web Development|Cloud Computing|DBMS,4,Reading,Discussion,Morning,Afternoon,0,0,0,0
+Java,Web Development|SQL|Java|Data Structures,3,Practical,Visual,Evening,Afternoon,1,0,0,0
+DBMS,Python|DBMS|Cloud Computing|Java,5,Visual,Practical,Morning,Afternoon,1,0,0,1
+Python,DBMS|Python|Data Structures|Web Development,1,Practical,Practical,Evening,Afternoon,1,1,0,1
+Data Structures,SQL|Python|Data Structures|Cloud Computing,5,Reading,Reading,Evening,Afternoon,1,1,0,1
+Python,Web Development|SQL|Python,3,Reading,Practical,Evening,Evening,1,0,1,1
+Data Structures,Web Development|DBMS|SQL,3,Visual,Discussion,Afternoon,Afternoon,0,0,1,0
+Cloud Computing,SQL|Java,3,Visual,Reading,Afternoon,Evening,0,0,0,0
+Data Structures,Python|Web Development,3,Reading,Practical,Morning,Evening,0,0,0,0
+Python,Java|DBMS,5,Practical,Practical,Morning,Morning,0,1,1,1
+DBMS,Java|DBMS|Python|Cloud Computing,5,Practical,Discussion,Evening,Afternoon,1,0,0,1
+Python,SQL|Cloud Computing|Java,1,Practical,Visual,Morning,Afternoon,0,0,0,0
+Python,Cloud Computing,4,Discussion,Practical,Evening,Afternoon,0,0,0,0
+Java,Web Development|Cloud Computing|Java,3,Reading,Discussion,Evening,Evening,1,0,1,1
+Python,SQL|Python|Java|Cloud Computing,2,Discussion,Reading,Evening,Morning,1,0,0,1
+SQL,Web Development|DBMS|Python,2,Discussion,Discussion,Evening,Afternoon,0,1,0,0
+DBMS,Python,2,Discussion,Reading,Morning,Morning,0,0,1,0
+Python,Cloud Computing|SQL|DBMS|Web Development,5,Visual,Reading,Evening,Afternoon,0,0,0,0
+Java,Data Structures,3,Practical,Discussion,Evening,Evening,0,0,1,0
+DBMS,DBMS|Java|SQL,3,Practical,Practical,Morning,Afternoon,1,1,0,1
+DBMS,Data Structures|DBMS|Web Development,4,Practical,Practical,Evening,Evening,1,1,1,1
+Java,Web Development|DBMS|SQL|Java,5,Visual,Visual,Evening,Evening,1,1,1,1
+Web Development,Python|SQL,5,Discussion,Visual,Evening,Morning,0,0,0,0
+Data Structures,Web Development,4,Visual,Discussion,Morning,Evening,0,0,0,0
+Web Development,Web Development,4,Reading,Visual,Afternoon,Afternoon,1,0,1,1
+DBMS,Web Development|Java,1,Discussion,Reading,Evening,Morning,0,0,0,0
+Java,Data Structures,1,Reading,Discussion,Morning,Morning,0,0,1,0
+DBMS,SQL|Data Structures|DBMS|Web Development,4,Visual,Practical,Evening,Afternoon,1,0,0,1
+Web Development,Web Development|Python|DBMS|Java,1,Reading,Discussion,Evening,Evening,1,0,1,1
+Web Development,Cloud Computing|Python|DBMS|Data Structures,3,Practical,Reading,Morning,Evening,0,0,0,0
+Java,Web Development|Java|Python|Cloud Computing,1,Visual,Visual,Afternoon,Evening,1,1,0,1
+Cloud Computing,Python,1,Discussion,Discussion,Morning,Evening,0,1,0,0
+Cloud Computing,Python,5,Reading,Practical,Evening,Evening,0,0,1,0
+Web Development,Python|SQL|Cloud Computing,5,Practical,Discussion,Afternoon,Afternoon,0,0,1,0
+Web Development,DBMS|Cloud Computing,4,Discussion,Visual,Afternoon,Evening,0,0,0,0
+Cloud Computing,DBMS|Data Structures|Cloud Computing,2,Reading,Discussion,Morning,Evening,1,0,0,0
+Cloud Computing,SQL|DBMS,2,Discussion,Visual,Evening,Afternoon,0,0,0,0
+Web Development,Data Structures|Python,3,Practical,Reading,Evening,Morning,0,0,0,0
+Cloud Computing,Java|Web Development|Python,1,Reading,Discussion,Evening,Evening,0,0,1,0
+Cloud Computing,Python,5,Practical,Discussion,Morning,Afternoon,0,0,0,0
+Java,Python|DBMS,1,Discussion,Practical,Evening,Evening,0,0,1,0
+Data Structures,Web Development|SQL,3,Discussion,Discussion,Evening,Evening,0,1,1,0
+SQL,Web Development|Data Structures|DBMS,1,Discussion,Reading,Morning,Afternoon,0,0,0,0
+Java,DBMS|Python,1,Reading,Discussion,Afternoon,Morning,0,0,0,0
+Python,Web Development|Python|Data Structures|SQL,3,Discussion,Discussion,Afternoon,Morning,1,1,0,1
+SQL,Python|DBMS,5,Discussion,Practical,Evening,Evening,0,0,1,0
+Web Development,Cloud Computing,1,Visual,Visual,Afternoon,Morning,0,1,0,0
+Python,DBMS,2,Visual,Practical,Evening,Afternoon,0,0,0,0
+Web Development,DBMS|Data Structures|Java|Web Development,5,Discussion,Visual,Morning,Evening,1,0,0,1
+Web Development,Java|Web Development|Data Structures,2,Visual,Visual,Evening,Morning,1,1,0,1
+Web Development,Cloud Computing|SQL|DBMS,4,Visual,Reading,Afternoon,Afternoon,0,0,1,0
+DBMS,SQL|DBMS,1,Visual,Visual,Afternoon,Afternoon,1,1,1,1
+Data Structures,DBMS,1,Practical,Visual,Afternoon,Afternoon,0,0,1,0
+SQL,Web Development,1,Practical,Practical,Evening,Evening,0,1,1,0
+Java,DBMS,3,Visual,Practical,Afternoon,Morning,0,0,0,0
+Web Development,Cloud Computing|DBMS,4,Visual,Reading,Morning,Evening,0,0,0,0
+Cloud Computing,DBMS|Web Development|SQL|Data Structures,2,Visual,Reading,Morning,Morning,0,0,1,0
+Cloud Computing,SQL,5,Discussion,Reading,Morning,Evening,0,0,0,0
+Data Structures,Python|SQL|Web Development|Data Structures,4,Practical,Discussion,Morning,Evening,1,0,0,1
+Python,Java,3,Practical,Discussion,Evening,Evening,0,0,1,0
+Data Structures,SQL|Java|DBMS,1,Reading,Discussion,Afternoon,Afternoon,0,0,1,0
+Java,Data Structures|Cloud Computing,5,Discussion,Visual,Morning,Morning,0,0,1,0
+Java,Cloud Computing|Data Structures|Java,3,Discussion,Discussion,Morning,Evening,1,1,0,1
+Python,DBMS|Data Structures,2,Practical,Reading,Afternoon,Afternoon,0,0,1,0
+Java,Data Structures|SQL,4,Reading,Discussion,Morning,Afternoon,0,0,0,0
+Python,Web Development|Cloud Computing|Python|Data Structures,1,Practical,Reading,Morning,Afternoon,1,0,0,0
+Web Development,Cloud Computing|SQL|Data Structures|DBMS,4,Practical,Reading,Afternoon,Evening,0,0,0,0
+Python,SQL|Python|Data Structures|Cloud Computing,3,Discussion,Practical,Afternoon,Afternoon,1,0,1,1
+Cloud Computing,SQL|Java|Web Development|Python,5,Practical,Visual,Evening,Afternoon,0,0,0,0
+Python,Cloud Computing|SQL|Java|Data Structures,4,Practical,Reading,Morning,Afternoon,0,0,0,0
+DBMS,Cloud Computing|Data Structures|Java|DBMS,5,Discussion,Discussion,Evening,Evening,1,1,1,1
+Cloud Computing,Web Development|Java|SQL|DBMS,1,Practical,Reading,Morning,Evening,0,0,0,0
+Web Development,Cloud Computing|SQL|Data Structures|Java,1,Visual,Reading,Morning,Evening,0,0,0,0
+Web Development,Data Structures|SQL,4,Discussion,Practical,Afternoon,Morning,0,0,0,0
+SQL,Java|Cloud Computing|Python|SQL,3,Reading,Discussion,Morning,Evening,1,0,0,0
+Data Structures,Data Structures,4,Reading,Visual,Afternoon,Morning,1,0,0,1
+Java,Cloud Computing,3,Visual,Practical,Evening,Morning,0,0,0,0
+Web Development,SQL|Web Development,4,Discussion,Practical,Afternoon,Evening,1,0,0,1
+DBMS,Data Structures|Java|Web Development|Python,4,Discussion,Discussion,Morning,Evening,0,1,0,0
+SQL,Web Development,1,Practical,Reading,Afternoon,Morning,0,0,0,0
+SQL,Web Development|DBMS|SQL|Data Structures,5,Discussion,Visual,Afternoon,Afternoon,1,0,1,1
+Web Development,Cloud Computing|DBMS,3,Visual,Practical,Afternoon,Morning,0,0,0,0
+Java,SQL|DBMS,2,Discussion,Discussion,Evening,Morning,0,1,0,0
+Data Structures,Data Structures|DBMS,5,Practical,Practical,Afternoon,Afternoon,1,1,1,1
+SQL,Web Development|Java|SQL|DBMS,4,Practical,Practical,Afternoon,Evening,1,1,0,1
+Data Structures,DBMS|Data Structures|Cloud Computing|Web Development,4,Practical,Visual,Evening,Morning,1,0,0,1
+Python,Java|SQL|Python,5,Reading,Practical,Afternoon,Evening,1,0,0,1
+Cloud Computing,Web Development|Cloud Computing|Java|DBMS,3,Reading,Visual,Evening,Afternoon,1,0,0,0
+Data Structures,DBMS,2,Reading,Visual,Afternoon,Afternoon,0,0,1,0
+Cloud Computing,Data Structures,1,Practical,Practical,Evening,Evening,0,1,1,0
+Cloud Computing,Python|Web Development|Cloud Computing|DBMS,2,Visual,Reading,Evening,Afternoon,1,0,0,0
+Python,DBMS|SQL|Cloud Computing,5,Reading,Visual,Morning,Afternoon,0,0,0,0
+SQL,DBMS|Python,2,Practical,Reading,Morning,Evening,0,0,0,0
+Python,DBMS|Data Structures|Cloud Computing,4,Visual,Visual,Afternoon,Evening,0,1,0,0
+DBMS,Data Structures|Cloud Computing|SQL,5,Visual,Visual,Evening,Afternoon,0,1,0,0
+DBMS,Cloud Computing|Java|Web Development,4,Practical,Discussion,Morning,Afternoon,0,0,0,0
+Cloud Computing,SQL|Web Development|DBMS,2,Discussion,Reading,Evening,Morning,0,0,0,1
+DBMS,Java|Cloud Computing|Python|Data Structures,4,Visual,Discussion,Morning,Evening,0,0,0,0
+DBMS,Python|SQL|Java,3,Reading,Visual,Afternoon,Evening,0,0,0,0
+Python,Data Structures,3,Practical,Discussion,Evening,Morning,0,0,0,0
+Java,Data Structures|Java,2,Practical,Discussion,Morning,Morning,1,0,1,1
+Cloud Computing,Cloud Computing,4,Practical,Discussion,Morning,Morning,1,0,1,1
+DBMS,Java,3,Reading,Reading,Morning,Afternoon,0,1,0,0
+Cloud Computing,DBMS|Cloud Computing,2,Visual,Visual,Evening,Evening,1,1,1,1
+SQL,DBMS|Cloud Computing,2,Discussion,Discussion,Morning,Morning,0,1,1,0
+Python,Web Development,4,Reading,Discussion,Afternoon,Morning,0,0,0,0
+DBMS,Python,5,Reading,Visual,Evening,Afternoon,0,0,0,0
+Web Development,DBMS|Data Structures,3,Visual,Practical,Afternoon,Afternoon,0,0,1,0
+Data Structures,Web Development,1,Reading,Reading,Morning,Afternoon,0,1,0,0
+Web Development,SQL|Web Development|Python|Data Structures,1,Visual,Visual,Morning,Afternoon,1,1,0,1
+Java,Web Development|SQL|Cloud Computing|Data Structures,4,Discussion,Visual,Evening,Evening,0,0,1,0
+Python,Java|SQL|Cloud Computing,5,Practical,Practical,Evening,Afternoon,0,1,0,0
+DBMS,SQL,4,Practical,Visual,Morning,Morning,0,0,1,0
+Java,Web Development|Cloud Computing|Java|SQL,2,Visual,Visual,Evening,Morning,1,1,0,1
+Python,SQL|Web Development|DBMS|Cloud Computing,2,Reading,Practical,Evening,Afternoon,0,0,0,0
+Java,SQL,4,Reading,Visual,Afternoon,Evening,0,0,0,0
+DBMS,Data Structures,4,Reading,Visual,Afternoon,Evening,0,0,0,0
+Python,Cloud Computing|Java|Web Development,1,Practical,Visual,Morning,Morning,0,0,1,0
+Data Structures,Data Structures|Python|DBMS,1,Discussion,Practical,Afternoon,Morning,1,0,0,0
+DBMS,SQL|Java|Web Development,3,Visual,Visual,Morning,Morning,0,1,1,0
+Java,Java|Data Structures|SQL|Web Development,3,Visual,Discussion,Morning,Afternoon,1,0,0,0
+Web Development,DBMS|Web Development|Python,4,Reading,Discussion,Morning,Evening,1,0,0,1
+Cloud Computing,Python|Java,4,Visual,Practical,Evening,Afternoon,0,0,0,0
+DBMS,SQL,1,Discussion,Reading,Morning,Morning,0,0,1,0
+Python,Data Structures|Java|Python|SQL,1,Visual,Practical,Evening,Afternoon,1,0,0,0
+SQL,DBMS|Java|Web Development|Cloud Computing,5,Practical,Discussion,Morning,Evening,0,0,0,0
+Data Structures,Python|SQL,3,Reading,Discussion,Evening,Evening,0,0,1,0
+Data Structures,Python|Java|Cloud Computing,2,Visual,Practical,Morning,Morning,0,0,1,0
+SQL,Java|Web Development|SQL|Python,4,Reading,Discussion,Afternoon,Morning,1,0,0,1
+Cloud Computing,Cloud Computing|DBMS|Web Development,1,Practical,Reading,Morning,Morning,1,0,1,1
+SQL,Web Development|Java|SQL|Cloud Computing,2,Visual,Discussion,Afternoon,Evening,1,0,0,0
+Python,Data Structures,1,Practical,Visual,Morning,Morning,0,0,1,0
+Python,Python|Data Structures,3,Visual,Reading,Morning,Morning,1,0,1,1
+Python,Cloud Computing|Python|Java|SQL,1,Visual,Discussion,Morning,Morning,1,0,1,1
+Data Structures,Data Structures|Java|Cloud Computing|Web Development,2,Reading,Practical,Morning,Afternoon,1,0,0,0
+Python,Web Development,5,Practical,Reading,Afternoon,Afternoon,0,0,1,0
+Data Structures,Java,3,Discussion,Practical,Afternoon,Morning,0,0,0,0
+Cloud Computing,DBMS|Web Development,1,Discussion,Reading,Afternoon,Evening,0,0,0,0
+SQL,Data Structures|SQL|Python,1,Reading,Practical,Morning,Afternoon,1,0,0,1
+Data Structures,Cloud Computing|Web Development|Python,2,Visual,Practical,Evening,Morning,0,0,0,0
+Cloud Computing,Cloud Computing,2,Discussion,Reading,Morning,Morning,1,0,1,1
+SQL,Web Development|Java|SQL,5,Practical,Practical,Afternoon,Evening,1,1,0,1
+Data Structures,Java,1,Practical,Practical,Morning,Evening,0,1,0,0
+SQL,Cloud Computing|Python,3,Practical,Reading,Morning,Morning,0,0,1,0
+DBMS,Cloud Computing|Java,5,Reading,Visual,Afternoon,Evening,0,0,0,0
+Data Structures,SQL,3,Reading,Practical,Morning,Evening,0,0,0,0
+Cloud Computing,DBMS|SQL|Python|Cloud Computing,2,Practical,Discussion,Afternoon,Evening,1,0,0,0
+Python,DBMS|Java,5,Discussion,Visual,Morning,Evening,0,0,0,0
+Cloud Computing,DBMS|Web Development,1,Discussion,Practical,Afternoon,Evening,0,0,0,0
+SQL,Python|DBMS|Java,3,Discussion,Visual,Afternoon,Morning,0,0,0,0
+Java,SQL|Java|DBMS,1,Discussion,Discussion,Evening,Afternoon,1,1,0,1
+Data Structures,Data Structures|SQL|Web Development|Cloud Computing,1,Discussion,Practical,Morning,Afternoon,1,0,0,0
+Cloud Computing,SQL,1,Reading,Reading,Morning,Morning,0,1,1,0
+Data Structures,DBMS|Java,5,Visual,Reading,Evening,Evening,0,0,1,0
+DBMS,Data Structures,2,Discussion,Practical,Morning,Morning,0,0,1,0
+Python,DBMS|Web Development|Cloud Computing|SQL,3,Reading,Practical,Morning,Morning,0,0,1,0
+Web Development,Python|Java|SQL|DBMS,4,Visual,Reading,Evening,Evening,0,0,1,0
+Python,Java,2,Practical,Reading,Morning,Afternoon,0,0,0,0
+SQL,Data Structures|Cloud Computing|SQL|Java,5,Discussion,Practical,Afternoon,Afternoon,1,0,1,1
+Data Structures,SQL,4,Discussion,Reading,Morning,Afternoon,0,0,0,0
+Python,Java,3,Discussion,Practical,Evening,Morning,0,0,0,0
+Cloud Computing,Web Development|DBMS|Data Structures|Python,4,Reading,Visual,Afternoon,Evening,0,0,0,1
+Web Development,Java|Data Structures,2,Practical,Practical,Morning,Morning,0,1,1,1
+Java,Python|DBMS|Cloud Computing|SQL,3,Visual,Visual,Afternoon,Evening,0,1,0,0
+SQL,Web Development|Data Structures|Java,5,Discussion,Visual,Afternoon,Morning,0,0,0,0
+Web Development,Java,5,Visual,Reading,Evening,Afternoon,0,0,0,0
+SQL,DBMS|Data Structures|Web Development|Cloud Computing,1,Practical,Reading,Afternoon,Morning,0,0,0,0
+DBMS,Java|Data Structures|SQL|Python,1,Discussion,Reading,Afternoon,Morning,0,0,0,0
+Cloud Computing,SQL|Cloud Computing|Data Structures,1,Practical,Practical,Afternoon,Evening,1,1,0,1
+Cloud Computing,SQL|DBMS|Data Structures,5,Visual,Practical,Afternoon,Morning,0,0,0,0
+Data Structures,Cloud Computing|Web Development|SQL|Java,5,Practical,Visual,Afternoon,Evening,0,0,0,0
+Python,Python,2,Practical,Visual,Morning,Morning,1,0,1,1
+SQL,SQL|Cloud Computing,4,Discussion,Visual,Evening,Morning,1,0,0,1
+Data Structures,Python|Data Structures|Web Development|SQL,3,Practical,Reading,Evening,Evening,1,0,1,1
+Java,Java|Python|Web Development|DBMS,2,Practical,Practical,Afternoon,Evening,1,1,0,1
+Java,Data Structures,2,Practical,Visual,Morning,Afternoon,0,0,0,0
+SQL,Data Structures|Cloud Computing|SQL,4,Reading,Practical,Afternoon,Afternoon,1,0,1,1
+Cloud Computing,Web Development|Java|DBMS|SQL,5,Reading,Reading,Evening,Morning,0,1,0,0
+SQL,DBMS|SQL|Cloud Computing,3,Reading,Practical,Morning,Evening,1,0,0,0
+Java,DBMS|SQL|Python|Java,4,Reading,Reading,Afternoon,Afternoon,1,1,1,1
+Java,SQL|DBMS,2,Discussion,Reading,Evening,Afternoon,0,0,0,0
+Cloud Computing,SQL|Java,4,Practical,Reading,Evening,Evening,0,0,1,0
+Python,DBMS|Java|Python,3,Practical,Reading,Afternoon,Afternoon,1,0,1,1
+Web Development,Data Structures|Java|Cloud Computing,1,Visual,Discussion,Morning,Evening,0,0,0,0
+DBMS,Web Development|SQL|Data Structures|Java,2,Practical,Practical,Afternoon,Afternoon,0,1,1,0
+Data Structures,SQL|DBMS,2,Visual,Discussion,Afternoon,Evening,0,0,0,0
+SQL,Java,4,Reading,Practical,Morning,Evening,0,0,0,0
+Data Structures,Python,5,Discussion,Discussion,Afternoon,Afternoon,0,1,1,1
+Data Structures,Java,5,Practical,Reading,Morning,Afternoon,0,0,0,0
+Web Development,Java|DBMS,1,Practical,Practical,Evening,Afternoon,0,1,0,0
+Java,Web Development|Cloud Computing|SQL|Python,1,Visual,Reading,Afternoon,Afternoon,0,0,1,0
+Web Development,Data Structures|DBMS|Python,3,Discussion,Reading,Morning,Morning,0,0,1,0
+Cloud Computing,Java|Python|DBMS|Web Development,2,Visual,Practical,Morning,Afternoon,0,0,0,0
+Cloud Computing,Data Structures,3,Visual,Visual,Evening,Morning,0,1,0,0
+Java,DBMS,1,Discussion,Discussion,Afternoon,Morning,0,1,0,0
+Data Structures,Python|DBMS,1,Reading,Discussion,Evening,Morning,0,0,0,0
+SQL,Data Structures|Java,5,Visual,Reading,Morning,Morning,0,0,1,0
+Web Development,Cloud Computing|SQL,5,Practical,Reading,Evening,Afternoon,0,0,0,0
+Java,Python|DBMS|Data Structures|SQL,2,Visual,Visual,Evening,Morning,0,1,0,0
+Cloud Computing,Python|Java|Web Development|DBMS,1,Reading,Practical,Afternoon,Afternoon,0,0,1,0
+Java,Cloud Computing,2,Visual,Reading,Afternoon,Evening,0,0,0,0
+DBMS,Java,1,Visual,Practical,Evening,Evening,0,0,1,0
+SQL,Web Development|SQL|Java|DBMS,3,Practical,Visual,Afternoon,Afternoon,1,0,1,1
+SQL,DBMS|Data Structures|Cloud Computing|Python,1,Practical,Visual,Morning,Morning,0,0,1,0
+Web Development,Cloud Computing|Web Development|Data Structures|Python,5,Discussion,Reading,Evening,Morning,1,0,0,1
+Cloud Computing,Data Structures|Cloud Computing,1,Discussion,Discussion,Morning,Morning,1,1,1,1
+SQL,DBMS,5,Practical,Reading,Evening,Evening,0,0,1,0
+Web Development,Data Structures,2,Discussion,Reading,Evening,Evening,0,0,1,0
+Python,Java,2,Discussion,Discussion,Morning,Morning,0,1,1,0
+SQL,SQL|Cloud Computing,1,Practical,Discussion,Afternoon,Morning,1,0,0,0
+Data Structures,Java|Data Structures|DBMS|SQL,1,Discussion,Visual,Morning,Afternoon,1,0,0,0
+Web Development,Cloud Computing,1,Reading,Practical,Evening,Evening,0,0,1,0
+SQL,Cloud Computing|Java|Python,4,Reading,Discussion,Evening,Evening,0,0,1,0
+Data Structures,Java,2,Visual,Reading,Afternoon,Evening,0,0,0,0
+SQL,DBMS|Java|Cloud Computing,2,Discussion,Practical,Evening,Evening,0,0,1,0
+Java,Web Development|Python|DBMS,1,Discussion,Practical,Afternoon,Morning,0,0,0,0
+Java,Java|DBMS|Web Development|Cloud Computing,4,Discussion,Practical,Afternoon,Morning,1,0,0,1
+Java,Cloud Computing|Web Development|Data Structures|Python,5,Practical,Practical,Morning,Afternoon,0,1,0,0
+Web Development,Web Development|Data Structures|DBMS,5,Practical,Reading,Afternoon,Afternoon,1,0,1,1
+Data Structures,Python|Data Structures,5,Reading,Reading,Evening,Evening,1,1,1,1
+DBMS,Python|Cloud Computing,5,Reading,Reading,Evening,Morning,0,1,0,0
+DBMS,Web Development|Cloud Computing,3,Visual,Reading,Evening,Afternoon,0,0,0,0
+DBMS,DBMS|Cloud Computing|Web Development|SQL,4,Visual,Visual,Morning,Afternoon,1,1,0,1
+DBMS,Python,3,Practical,Reading,Evening,Afternoon,0,0,0,0
+Java,Python|Web Development|Java,3,Discussion,Visual,Evening,Evening,1,0,1,1
+Cloud Computing,DBMS|Cloud Computing,5,Discussion,Practical,Evening,Evening,1,0,1,1
+DBMS,Data Structures,4,Discussion,Reading,Evening,Morning,0,0,0,1
+SQL,Web Development|Data Structures,2,Reading,Practical,Evening,Morning,0,0,0,0
+Python,Python,2,Visual,Discussion,Morning,Afternoon,1,0,0,0
+SQL,Python|Web Development,3,Visual,Reading,Afternoon,Evening,0,0,0,0
+Java,SQL|Web Development,1,Reading,Discussion,Evening,Evening,0,0,1,0
+Cloud Computing,Web Development|Python|DBMS,5,Visual,Practical,Afternoon,Evening,0,0,0,0
+Java,Python|Cloud Computing|SQL,3,Reading,Reading,Morning,Evening,0,1,0,0
+Web Development,Java,3,Discussion,Practical,Evening,Evening,0,0,1,0
+Python,DBMS,3,Discussion,Visual,Afternoon,Afternoon,0,0,1,0
+SQL,Web Development,3,Discussion,Discussion,Morning,Afternoon,0,1,0,0
+Python,Web Development|Java|DBMS,2,Visual,Visual,Morning,Evening,0,1,0,0
+Python,Cloud Computing|Java|Python|Data Structures,1,Practical,Visual,Afternoon,Evening,1,0,0,0
+Java,Java,2,Reading,Visual,Evening,Morning,1,0,0,0
+Data Structures,Data Structures|DBMS|Cloud Computing|Web Development,3,Visual,Discussion,Evening,Morning,1,0,0,0
+DBMS,Cloud Computing,5,Visual,Visual,Afternoon,Evening,0,1,0,0
+Cloud Computing,Web Development|Java|SQL,4,Discussion,Discussion,Evening,Morning,0,1,0,0
+Web Development,Python|DBMS,4,Reading,Practical,Afternoon,Evening,0,0,0,0
+Cloud Computing,Java|Web Development|DBMS,2,Visual,Visual,Morning,Evening,0,1,0,0
+Web Development,SQL,2,Reading,Practical,Afternoon,Evening,0,0,0,0
+Python,Python|Cloud Computing,5,Reading,Practical,Morning,Morning,1,0,1,1
+Web Development,Cloud Computing,5,Discussion,Visual,Afternoon,Evening,0,0,0,0
+Java,DBMS|Web Development,4,Reading,Reading,Morning,Evening,0,1,0,0
+Java,Web Development|Java|Python,3,Discussion,Discussion,Afternoon,Evening,1,1,0,1
+DBMS,Web Development|Cloud Computing,3,Reading,Discussion,Morning,Morning,0,0,1,0
+Cloud Computing,DBMS|Cloud Computing,4,Reading,Reading,Morning,Evening,1,1,0,1
+Data Structures,Data Structures|SQL|DBMS|Cloud Computing,5,Visual,Practical,Evening,Evening,1,0,1,1
+SQL,Web Development|Python,3,Visual,Visual,Morning,Evening,0,1,0,0
+Cloud Computing,Cloud Computing|Web Development|Python|Java,5,Reading,Discussion,Evening,Morning,1,0,0,1
+Python,Python|Data Structures|Web Development,5,Visual,Discussion,Afternoon,Evening,1,0,0,0
+Python,Cloud Computing|Web Development,2,Discussion,Practical,Morning,Evening,0,0,0,0
+DBMS,DBMS|Cloud Computing,4,Reading,Visual,Morning,Afternoon,1,0,0,1
+SQL,Python|Java|Cloud Computing,5,Reading,Discussion,Afternoon,Afternoon,0,0,1,0
+Java,Java|DBMS|Web Development,3,Reading,Practical,Afternoon,Evening,1,0,0,0
+Web Development,Web Development,3,Discussion,Practical,Evening,Afternoon,1,0,0,0
+Cloud Computing,Data Structures|Cloud Computing|Web Development,1,Practical,Discussion,Morning,Morning,1,0,1,1
+DBMS,Python|Cloud Computing|DBMS,2,Reading,Visual,Evening,Morning,1,0,0,0
+SQL,Data Structures,4,Discussion,Practical,Evening,Morning,0,0,0,0
+Data Structures,Python,1,Practical,Practical,Morning,Evening,0,1,0,0
+Web Development,Java|Python,3,Practical,Discussion,Evening,Evening,0,0,1,0
+DBMS,Java|Python|Data Structures,5,Discussion,Discussion,Morning,Morning,0,1,1,1
+Web Development,Cloud Computing|Web Development,2,Reading,Practical,Evening,Evening,1,0,1,1
+Data Structures,Python,4,Discussion,Practical,Morning,Morning,0,0,1,0
+Cloud Computing,Cloud Computing|Python|Web Development|Java,2,Discussion,Visual,Evening,Evening,1,0,1,1
+Java,DBMS|Python|Web Development|Java,4,Discussion,Reading,Morning,Evening,1,0,0,1
+Python,Cloud Computing|Data Structures|SQL|Java,4,Practical,Reading,Afternoon,Morning,0,0,0,0
+Java,Web Development|Cloud Computing|Data Structures,3,Practical,Visual,Evening,Evening,0,0,1,0
+Web Development,Web Development,1,Discussion,Practical,Evening,Afternoon,1,0,0,0
+Java,Data Structures|DBMS,5,Reading,Reading,Evening,Afternoon,0,1,0,0
+Web Development,DBMS|Data Structures|Python,4,Discussion,Practical,Afternoon,Evening,0,0,0,0
+SQL,Web Development|SQL|Data Structures,2,Visual,Practical,Afternoon,Evening,1,0,0,0
+Java,Web Development|Data Structures,3,Visual,Practical,Afternoon,Evening,0,0,0,1
+Java,Data Structures|Web Development,4,Visual,Visual,Afternoon,Morning,0,1,0,0
+Web Development,DBMS,4,Discussion,Reading,Evening,Evening,0,0,1,1
+Cloud Computing,DBMS|Data Structures,4,Visual,Practical,Evening,Evening,0,0,1,0
+Java,Web Development|Python,1,Reading,Practical,Evening,Morning,0,0,0,0
+Java,Cloud Computing|Data Structures|SQL,4,Discussion,Practical,Evening,Morning,0,0,0,0
+Java,Web Development,3,Reading,Reading,Afternoon,Morning,0,1,0,0
+Python,Data Structures|Web Development|Java|SQL,2,Discussion,Visual,Evening,Morning,0,0,0,0
+SQL,Cloud Computing,5,Reading,Reading,Evening,Afternoon,0,1,0,0
+Web Development,Cloud Computing|Python|SQL|Data Structures,4,Visual,Discussion,Morning,Afternoon,0,0,0,0
+DBMS,DBMS|Cloud Computing,2,Reading,Discussion,Afternoon,Evening,1,0,0,0
+DBMS,Python|SQL|Java,4,Reading,Visual,Evening,Morning,0,0,0,0
+SQL,Web Development|SQL,2,Practical,Discussion,Evening,Morning,1,0,0,0
+Python,Python|Cloud Computing|DBMS,2,Reading,Practical,Morning,Morning,1,0,1,1
+DBMS,Web Development|Java|Cloud Computing|DBMS,4,Reading,Reading,Afternoon,Evening,1,1,0,1
+Data Structures,Cloud Computing|Web Development,3,Discussion,Practical,Evening,Morning,0,0,0,1
+Cloud Computing,Data Structures|Web Development|Java|SQL,4,Practical,Discussion,Morning,Evening,0,0,0,0
+SQL,Java,2,Discussion,Visual,Afternoon,Afternoon,0,0,1,0
+SQL,Web Development|SQL,2,Reading,Discussion,Evening,Afternoon,1,0,0,0
+Data Structures,Python|Data Structures|SQL|Web Development,4,Reading,Discussion,Morning,Evening,1,0,0,1
+Web Development,Cloud Computing|Java,3,Practical,Discussion,Afternoon,Morning,0,0,0,0
+DBMS,Data Structures|Java,2,Discussion,Discussion,Morning,Evening,0,1,0,0
+DBMS,Cloud Computing|Data Structures|SQL,3,Visual,Discussion,Morning,Evening,0,0,0,0
+Python,Data Structures|DBMS|Java,4,Reading,Reading,Afternoon,Afternoon,0,1,1,0
+Cloud Computing,SQL|Java|Data Structures,1,Reading,Practical,Evening,Evening,0,0,1,0
+Web Development,Cloud Computing|SQL,3,Reading,Discussion,Evening,Afternoon,0,0,0,0
+Data Structures,Data Structures|DBMS|Python,2,Reading,Discussion,Evening,Evening,1,0,1,1
+Cloud Computing,Java,2,Reading,Practical,Afternoon,Afternoon,0,0,1,0
+DBMS,Web Development|DBMS|Data Structures,3,Discussion,Reading,Evening,Evening,1,0,1,1
+Data Structures,Python|Cloud Computing|Java|DBMS,2,Reading,Visual,Morning,Morning,0,0,1,0
+Java,Data Structures,5,Visual,Visual,Afternoon,Evening,0,1,0,0
+Java,SQL,5,Practical,Visual,Evening,Afternoon,0,0,0,0
+Python,Data Structures|DBMS|Python,2,Practical,Visual,Morning,Evening,1,0,0,0
+SQL,Data Structures|Web Development|SQL|Cloud Computing,2,Practical,Discussion,Evening,Evening,1,0,1,1
+Web Development,Web Development|DBMS|Cloud Computing|SQL,3,Discussion,Practical,Morning,Afternoon,1,0,0,0
+Data Structures,Python|SQL|Java,1,Practical,Reading,Afternoon,Afternoon,0,0,1,0
+DBMS,Cloud Computing|Data Structures|SQL|Java,4,Reading,Practical,Morning,Evening,0,0,0,0
+Data Structures,Data Structures|Python|DBMS|Cloud Computing,4,Practical,Reading,Morning,Afternoon,1,0,0,1
+Web Development,SQL|DBMS|Web Development,3,Discussion,Practical,Morning,Morning,1,0,1,1
+Java,Web Development|Data Structures|SQL|DBMS,2,Reading,Visual,Morning,Morning,0,0,1,0
+Java,Java|SQL,3,Practical,Discussion,Evening,Morning,1,0,0,0
+Python,Data Structures,2,Reading,Discussion,Afternoon,Afternoon,0,0,1,0
+Data Structures,SQL,1,Practical,Visual,Afternoon,Afternoon,0,0,1,0
+Data Structures,Python|SQL,4,Visual,Visual,Evening,Morning,0,1,0,0
+Data Structures,DBMS|Java,2,Discussion,Visual,Evening,Evening,0,0,1,0
+Data Structures,DBMS|SQL|Cloud Computing|Python,1,Visual,Reading,Afternoon,Evening,0,0,0,0
+SQL,Cloud Computing,2,Visual,Practical,Evening,Afternoon,0,0,0,0
+Python,Web Development|Java|Data Structures,2,Visual,Visual,Evening,Evening,0,1,1,0
+Web Development,SQL|Java,2,Practical,Discussion,Morning,Evening,0,0,0,0
+Cloud Computing,Java,3,Practical,Visual,Morning,Afternoon,0,0,0,0
+Web Development,Cloud Computing|Data Structures|Python,1,Discussion,Reading,Evening,Morning,0,0,0,0
+Java,DBMS|Data Structures|Web Development|SQL,5,Discussion,Practical,Evening,Morning,0,0,0,0
+SQL,SQL|Web Development|DBMS|Python,1,Practical,Discussion,Afternoon,Afternoon,1,0,1,1
+Data Structures,Cloud Computing,5,Discussion,Practical,Morning,Evening,0,0,0,0
+Cloud Computing,SQL|DBMS,1,Discussion,Practical,Evening,Evening,0,0,1,0
+Web Development,Web Development|SQL,3,Discussion,Reading,Morning,Morning,1,0,1,1
+Java,Cloud Computing,2,Practical,Visual,Morning,Morning,0,0,1,0
+Java,Web Development,4,Discussion,Reading,Morning,Afternoon,0,0,0,0
+DBMS,Java,2,Discussion,Visual,Afternoon,Evening,0,0,0,0
+Web Development,Cloud Computing|SQL|Java|DBMS,5,Visual,Visual,Afternoon,Morning,0,1,0,0
+Web Development,Java,2,Discussion,Practical,Morning,Evening,0,0,0,0
+Web Development,Web Development|DBMS,5,Discussion,Visual,Evening,Evening,1,0,1,1
+Data Structures,Java|Python|DBMS|Data Structures,5,Reading,Practical,Evening,Evening,1,0,1,1
+SQL,Web Development|SQL|DBMS,4,Discussion,Reading,Evening,Morning,1,0,0,1
+Python,Cloud Computing|Web Development|SQL|DBMS,4,Discussion,Discussion,Morning,Evening,0,1,0,1
+SQL,Web Development,2,Reading,Visual,Afternoon,Morning,0,0,0,0
+SQL,Cloud Computing,3,Practical,Visual,Morning,Afternoon,0,0,0,0
+Python,SQL|Web Development|Python,2,Reading,Reading,Morning,Evening,1,1,0,1
+Python,DBMS,3,Discussion,Practical,Afternoon,Evening,0,0,0,0
+Cloud Computing,Web Development,3,Visual,Discussion,Morning,Morning,0,0,1,0
+SQL,Cloud Computing|Data Structures|DBMS,1,Practical,Visual,Evening,Evening,0,0,1,0
+SQL,SQL,5,Practical,Reading,Evening,Evening,1,0,1,1
+Java,Data Structures|Web Development|DBMS|Java,2,Discussion,Reading,Afternoon,Morning,1,0,0,0
+Java,Web Development|DBMS|Java|Data Structures,3,Visual,Discussion,Evening,Afternoon,1,0,0,0
+Python,Data Structures|Web Development,2,Discussion,Discussion,Evening,Evening,0,1,1,0
+Web Development,Python|Java,3,Discussion,Reading,Evening,Evening,0,0,1,0
+DBMS,Data Structures|SQL|DBMS|Python,3,Reading,Visual,Afternoon,Morning,1,0,0,0
+Web Development,Web Development|Python|Data Structures|Java,2,Practical,Reading,Morning,Evening,1,0,0,0
+Java,Python,5,Practical,Reading,Morning,Afternoon,0,0,0,0
+Java,Data Structures|Cloud Computing|Java,3,Practical,Practical,Morning,Evening,1,1,0,1
+SQL,Web Development|DBMS|Python|Java,4,Visual,Reading,Morning,Morning,0,0,1,0
+Cloud Computing,Java|Data Structures|Cloud Computing,1,Discussion,Reading,Evening,Evening,1,0,1,1
+Java,SQL,4,Practical,Discussion,Evening,Evening,0,0,1,0
+SQL,Cloud Computing|Web Development|DBMS|Java,2,Practical,Discussion,Evening,Evening,0,0,1,1
+Python,SQL|Data Structures|DBMS,2,Visual,Reading,Evening,Afternoon,0,0,0,0
+SQL,Web Development|SQL,1,Reading,Discussion,Morning,Evening,1,0,0,0
+Python,SQL|Data Structures,2,Visual,Discussion,Evening,Evening,0,0,1,0
+DBMS,Data Structures|Python,5,Practical,Discussion,Afternoon,Evening,0,0,0,0
+Web Development,Python|DBMS,2,Practical,Practical,Afternoon,Evening,0,1,0,0
+Web Development,Data Structures|Python,5,Practical,Reading,Morning,Evening,0,0,0,0
+DBMS,Python,3,Practical,Visual,Afternoon,Afternoon,0,0,1,0
+SQL,DBMS|Cloud Computing|SQL|Python,2,Visual,Practical,Morning,Morning,1,0,1,1
+Web Development,Web Development|Cloud Computing|DBMS,2,Practical,Practical,Evening,Morning,1,1,0,1
+DBMS,Python|Web Development|DBMS|Data Structures,3,Practical,Discussion,Afternoon,Afternoon,1,0,1,1
+Python,Java|Data Structures,1,Reading,Discussion,Morning,Evening,0,0,0,0
+Python,Java|Python,4,Discussion,Reading,Afternoon,Morning,1,0,0,1
+Cloud Computing,Web Development,4,Reading,Discussion,Evening,Evening,0,0,1,0
+Web Development,Web Development,1,Discussion,Discussion,Morning,Morning,1,1,1,1
+Data Structures,Web Development,4,Visual,Practical,Afternoon,Afternoon,0,0,1,0
+SQL,Data Structures|Python|Cloud Computing,3,Visual,Practical,Afternoon,Evening,0,0,0,0
+DBMS,Python,5,Practical,Discussion,Afternoon,Afternoon,0,0,1,0
+Python,Web Development|DBMS|Python|Data Structures,1,Reading,Reading,Evening,Evening,1,1,1,1
+Cloud Computing,DBMS|Cloud Computing,1,Visual,Visual,Evening,Afternoon,1,1,0,1
+Java,DBMS|Web Development|Cloud Computing|Python,4,Discussion,Visual,Morning,Afternoon,0,0,0,0
+DBMS,Python|Cloud Computing,2,Visual,Discussion,Afternoon,Afternoon,0,0,1,0
+Data Structures,DBMS|Python|Java,2,Practical,Visual,Evening,Afternoon,0,0,0,1
+Data Structures,Web Development|Java|Cloud Computing|Data Structures,2,Practical,Discussion,Afternoon,Afternoon,1,0,1,1
+Web Development,Python,5,Reading,Practical,Morning,Morning,0,0,1,0
+DBMS,Java|Python|Cloud Computing,5,Reading,Reading,Morning,Morning,0,1,1,1
+Python,DBMS|SQL,5,Practical,Discussion,Evening,Evening,0,0,1,0
+Java,Cloud Computing,3,Reading,Reading,Afternoon,Morning,0,1,0,0
+Cloud Computing,SQL,4,Practical,Visual,Evening,Afternoon,0,0,0,0
+Data Structures,DBMS|Python,5,Visual,Visual,Evening,Evening,0,1,1,1
+Web Development,Data Structures,5,Reading,Discussion,Evening,Afternoon,0,0,0,0
+Web Development,Python|Web Development|DBMS,4,Discussion,Discussion,Morning,Evening,1,1,0,1
+SQL,Java|Cloud Computing,1,Discussion,Visual,Evening,Morning,0,0,0,0
+Data Structures,Java|SQL|DBMS|Python,1,Practical,Reading,Afternoon,Morning,0,0,0,0
+Web Development,Cloud Computing|Java|DBMS,3,Reading,Discussion,Evening,Evening,0,0,1,0
+Java,Python|SQL,3,Discussion,Discussion,Morning,Evening,0,1,0,0
+Python,Cloud Computing|Web Development|SQL|Data Structures,4,Visual,Reading,Evening,Evening,0,0,1,0
+Web Development,Python,5,Reading,Reading,Morning,Morning,0,1,1,1
+Java,Data Structures|DBMS|Web Development,2,Discussion,Practical,Evening,Morning,0,0,0,0
+Cloud Computing,DBMS|SQL|Java,3,Discussion,Visual,Afternoon,Morning,0,0,0,0
+Cloud Computing,Python|Web Development|SQL,2,Visual,Reading,Morning,Morning,0,0,1,0
+Data Structures,Cloud Computing,4,Practical,Practical,Afternoon,Afternoon,0,1,1,0
+Web Development,Cloud Computing|SQL|Python,1,Practical,Practical,Evening,Morning,0,1,0,0
+DBMS,Java,3,Visual,Visual,Afternoon,Afternoon,0,1,1,0
+Java,Java|Web Development|SQL,2,Reading,Practical,Morning,Afternoon,1,0,0,0
+SQL,DBMS|Java|SQL|Python,2,Reading,Visual,Morning,Evening,1,0,0,0
+Java,Web Development|SQL,5,Reading,Reading,Morning,Evening,0,1,0,0
+Web Development,Python|Java,3,Reading,Discussion,Morning,Morning,0,0,1,1
+DBMS,Java,4,Visual,Visual,Afternoon,Afternoon,0,1,1,0
+Web Development,Web Development|SQL|DBMS|Cloud Computing,2,Visual,Discussion,Evening,Morning,1,0,0,0
+Cloud Computing,Java|Data Structures|SQL|DBMS,4,Practical,Practical,Morning,Evening,0,1,0,0
+SQL,Python|DBMS|SQL|Web Development,4,Discussion,Visual,Morning,Afternoon,1,0,0,1
+Data Structures,Cloud Computing|Python|SQL|Web Development,5,Practical,Visual,Afternoon,Evening,0,0,0,0
+SQL,Cloud Computing,3,Discussion,Discussion,Evening,Afternoon,0,1,0,0
+Python,Data Structures|Cloud Computing,1,Reading,Practical,Evening,Evening,0,0,1,0
+Data Structures,Web Development|DBMS|Python,2,Visual,Discussion,Morning,Evening,0,0,0,0
+SQL,Cloud Computing,4,Practical,Reading,Afternoon,Morning,0,0,0,0
+DBMS,SQL|Data Structures|Java|Web Development,2,Practical,Visual,Morning,Evening,0,0,0,0
+Web Development,Data Structures|Web Development|DBMS,4,Practical,Practical,Evening,Afternoon,1,1,0,1
+Cloud Computing,Data Structures|DBMS|SQL,1,Visual,Discussion,Morning,Afternoon,0,0,0,0
+Web Development,Java,5,Reading,Visual,Afternoon,Morning,0,0,0,0
+DBMS,DBMS|SQL|Data Structures|Web Development,4,Discussion,Practical,Evening,Morning,1,0,0,1
+Python,Cloud Computing|SQL|Data Structures|Python,3,Practical,Practical,Morning,Morning,1,1,1,1
+Python,DBMS|Data Structures|Python|Java,2,Discussion,Discussion,Evening,Evening,1,1,1,1
+Web Development,Data Structures|Web Development,4,Discussion,Discussion,Afternoon,Morning,1,1,0,1
+Web Development,Web Development,4,Practical,Reading,Afternoon,Evening,1,0,0,1
+Java,Web Development,4,Reading,Visual,Evening,Afternoon,0,0,0,0
+Java,DBMS|Cloud Computing,5,Reading,Discussion,Evening,Morning,0,0,0,0
+Web Development,Python,4,Visual,Reading,Evening,Morning,0,0,0,0
+Web Development,Data Structures,4,Discussion,Reading,Afternoon,Afternoon,0,0,1,0
+Cloud Computing,SQL|Python|Java,5,Reading,Reading,Morning,Evening,0,1,0,0
+Python,DBMS,3,Visual,Reading,Afternoon,Morning,0,0,0,0
+Java,SQL|Python|Web Development,3,Reading,Reading,Morning,Evening,0,1,0,0
+Python,DBMS|Data Structures,3,Practical,Reading,Evening,Morning,0,0,0,0
+Cloud Computing,SQL,1,Practical,Practical,Afternoon,Afternoon,0,1,1,0
+Python,DBMS|Cloud Computing|Python|Web Development,5,Reading,Visual,Evening,Afternoon,1,0,0,1
+Java,Python,4,Discussion,Discussion,Afternoon,Afternoon,0,1,1,0
+Cloud Computing,Data Structures|DBMS,4,Discussion,Reading,Morning,Evening,0,0,0,0
+Java,Cloud Computing|Data Structures|DBMS,3,Visual,Visual,Evening,Evening,0,1,1,0
+Cloud Computing,Web Development|DBMS|SQL|Cloud Computing,3,Reading,Visual,Afternoon,Evening,1,0,0,0
+Data Structures,DBMS|Cloud Computing,5,Practical,Reading,Evening,Evening,0,0,1,0
+SQL,DBMS,1,Visual,Visual,Afternoon,Morning,0,1,0,0
+DBMS,SQL|Python|Cloud Computing|Web Development,2,Visual,Visual,Evening,Morning,0,1,0,1
+Web Development,Web Development|DBMS,1,Visual,Visual,Evening,Morning,1,1,0,1
+Cloud Computing,Java|DBMS,2,Reading,Reading,Afternoon,Evening,0,1,0,0
+DBMS,SQL|Data Structures|Cloud Computing|Web Development,2,Visual,Reading,Morning,Afternoon,0,0,0,0
+Java,Cloud Computing|SQL|Python,4,Visual,Discussion,Morning,Evening,0,0,0,0
+DBMS,Java|Python|Web Development|Data Structures,2,Visual,Discussion,Evening,Afternoon,0,0,0,0
+Java,Web Development,3,Discussion,Visual,Afternoon,Morning,0,0,0,0
+Java,DBMS,4,Reading,Practical,Evening,Afternoon,0,0,0,0
+Web Development,Web Development,4,Discussion,Discussion,Afternoon,Evening,1,1,0,1
+Cloud Computing,Web Development,2,Visual,Discussion,Evening,Afternoon,0,0,0,0
+Web Development,SQL|DBMS|Cloud Computing,4,Visual,Visual,Afternoon,Evening,0,1,0,0
+SQL,Cloud Computing,4,Reading,Practical,Morning,Evening,0,0,0,1
+Data Structures,SQL|DBMS,4,Visual,Reading,Afternoon,Morning,0,0,0,0
+Data Structures,Python|Java,2,Visual,Practical,Afternoon,Afternoon,0,0,1,0
+Web Development,Data Structures|Web Development|Cloud Computing,1,Visual,Reading,Morning,Afternoon,1,0,0,0
+Java,Java|Python|Web Development|Data Structures,5,Practical,Practical,Morning,Morning,1,1,1,1
+Data Structures,Data Structures,5,Visual,Practical,Evening,Evening,1,0,1,1
+Python,SQL,1,Discussion,Practical,Evening,Morning,0,0,0,0
+Java,Data Structures,5,Practical,Visual,Morning,Afternoon,0,0,0,0
+Cloud Computing,SQL|Java|Web Development|Python,3,Practical,Visual,Evening,Morning,0,0,0,0
+Java,Python|Data Structures|Cloud Computing,3,Practical,Discussion,Morning,Evening,0,0,0,1
+Java,Cloud Computing|Python|Java|Data Structures,1,Visual,Visual,Morning,Morning,1,1,1,1
+Web Development,Data Structures|DBMS|Cloud Computing,2,Practical,Practical,Evening,Afternoon,0,1,0,0
+Data Structures,Python|Web Development,1,Practical,Discussion,Evening,Morning,0,0,0,0
+Cloud Computing,SQL|Data Structures|Java,5,Practical,Practical,Morning,Evening,0,1,0,0
+Web Development,Cloud Computing|Web Development|DBMS,2,Discussion,Practical,Afternoon,Morning,1,0,0,0
+Cloud Computing,DBMS|Data Structures,4,Practical,Practical,Evening,Morning,0,1,0,1
+SQL,Python|Data Structures|SQL,3,Discussion,Visual,Morning,Evening,1,0,0,1
+Web Development,Python|Java,4,Visual,Visual,Morning,Evening,0,1,0,0
+Web Development,Data Structures|Python|SQL,2,Visual,Reading,Morning,Morning,0,0,1,0
+Data Structures,Data Structures|Python,1,Discussion,Discussion,Morning,Afternoon,1,1,0,1
+Web Development,Python|Data Structures|SQL|Cloud Computing,4,Practical,Reading,Afternoon,Morning,0,0,0,0
+Java,SQL,2,Visual,Discussion,Afternoon,Afternoon,0,0,1,0
+SQL,SQL|Web Development,2,Practical,Practical,Morning,Afternoon,1,1,0,1
+Data Structures,Web Development|Data Structures,4,Reading,Visual,Evening,Afternoon,1,0,0,1
+Python,SQL|Data Structures,5,Practical,Practical,Evening,Morning,0,1,0,0
+Java,Data Structures,5,Visual,Discussion,Evening,Afternoon,0,0,0,0
+Cloud Computing,Data Structures,4,Practical,Visual,Evening,Morning,0,0,0,0
+Data Structures,Python|SQL,3,Practical,Visual,Morning,Afternoon,0,0,0,0
+Python,Cloud Computing|Web Development|DBMS|Java,4,Discussion,Practical,Evening,Afternoon,0,0,0,0
+Cloud Computing,DBMS|Data Structures|Java,1,Discussion,Reading,Evening,Morning,0,0,0,0
+Cloud Computing,DBMS|Web Development|Cloud Computing,5,Practical,Visual,Evening,Afternoon,1,0,0,1
+Java,Java|Cloud Computing|Data Structures,3,Discussion,Visual,Afternoon,Afternoon,1,0,1,1
+Web Development,Web Development,2,Practical,Reading,Morning,Evening,1,0,0,0
+Data Structures,Cloud Computing|DBMS,2,Reading,Reading,Afternoon,Evening,0,1,0,0
+SQL,Java,3,Reading,Discussion,Afternoon,Evening,0,0,0,0
+Java,DBMS|Web Development|Cloud Computing|SQL,4,Reading,Visual,Morning,Afternoon,0,0,0,0
+Data Structures,SQL|Java,1,Practical,Reading,Morning,Evening,0,0,0,0
+Python,Web Development|DBMS,1,Reading,Discussion,Evening,Evening,0,0,1,0
+Data Structures,Data Structures|Cloud Computing|Java,3,Practical,Visual,Morning,Morning,1,0,1,1
+Web Development,Data Structures|Web Development|SQL,3,Discussion,Discussion,Afternoon,Afternoon,1,1,1,1
+Cloud Computing,Python|SQL|Cloud Computing,4,Reading,Reading,Morning,Morning,1,1,1,1
+Data Structures,Web Development|Python,5,Reading,Practical,Morning,Evening,0,0,0,0
+DBMS,Python|Cloud Computing,1,Visual,Reading,Evening,Morning,0,0,0,0
+SQL,Python|Web Development,1,Reading,Reading,Morning,Afternoon,0,1,0,0
+Python,Java|Cloud Computing|Data Structures,4,Practical,Discussion,Afternoon,Morning,0,0,0,1
+DBMS,DBMS|Cloud Computing|SQL,4,Reading,Practical,Evening,Evening,1,0,1,1
+Data Structures,DBMS|Java|Data Structures,1,Practical,Visual,Afternoon,Morning,1,0,0,0
+Cloud Computing,Data Structures|SQL,1,Reading,Visual,Evening,Evening,0,0,1,0
+Web Development,Cloud Computing|SQL,2,Visual,Visual,Evening,Afternoon,0,1,0,0
+Java,Python|Data Structures|SQL|Java,3,Discussion,Practical,Evening,Afternoon,1,0,0,0
+SQL,SQL,3,Reading,Reading,Afternoon,Evening,1,1,0,1
+DBMS,DBMS|Data Structures|Cloud Computing|SQL,2,Discussion,Discussion,Morning,Evening,1,1,0,1
+Python,SQL|Data Structures,5,Reading,Visual,Evening,Afternoon,0,0,0,0
+Data Structures,Data Structures|Python|Web Development,4,Practical,Practical,Morning,Afternoon,1,1,0,1
+Data Structures,Cloud Computing,3,Reading,Discussion,Evening,Evening,0,0,1,0
+Java,Python,3,Reading,Discussion,Morning,Evening,0,0,0,0
+SQL,Python|Data Structures|Cloud Computing|Java,1,Reading,Discussion,Morning,Evening,0,0,0,0
+Web Development,Web Development|Data Structures|SQL|DBMS,1,Reading,Visual,Afternoon,Morning,1,0,0,0
+Python,Data Structures|DBMS|Python,3,Practical,Visual,Afternoon,Afternoon,1,0,1,1
+SQL,SQL,3,Visual,Practical,Evening,Morning,1,0,0,0
+Web Development,Web Development|SQL,3,Reading,Reading,Evening,Evening,1,1,1,1
+Java,Cloud Computing|Python|Java,2,Reading,Reading,Afternoon,Afternoon,1,1,1,1
+Python,Python,2,Practical,Practical,Evening,Evening,1,1,1,1
+Web Development,Data Structures,4,Visual,Visual,Morning,Morning,0,1,1,0
+SQL,Python|Data Structures|Web Development,5,Reading,Practical,Evening,Afternoon,0,0,0,1
+Cloud Computing,Python,2,Practical,Practical,Afternoon,Morning,0,1,0,0
+Java,DBMS|Java|Cloud Computing|Web Development,4,Discussion,Visual,Morning,Morning,1,0,1,0
+DBMS,Data Structures,1,Reading,Visual,Morning,Afternoon,0,0,0,0
+Cloud Computing,Cloud Computing,1,Practical,Practical,Morning,Evening,1,1,0,1
+Java,Cloud Computing|DBMS,3,Reading,Reading,Morning,Evening,0,1,0,0
+Web Development,Web Development|Cloud Computing,1,Visual,Visual,Evening,Morning,1,1,0,1
+SQL,Cloud Computing|Web Development,1,Visual,Practical,Evening,Evening,0,0,1,0
+DBMS,Data Structures|DBMS,1,Practical,Reading,Afternoon,Afternoon,1,0,1,1
+Python,Java|SQL|Cloud Computing|Data Structures,1,Practical,Discussion,Afternoon,Evening,0,0,0,0
+DBMS,Java,3,Discussion,Visual,Afternoon,Afternoon,0,0,1,0
+DBMS,DBMS|Data Structures|Python,5,Discussion,Reading,Afternoon,Morning,1,0,0,1
+Cloud Computing,DBMS|SQL|Python|Java,4,Visual,Discussion,Afternoon,Evening,0,0,0,0
+Java,Python,4,Discussion,Visual,Evening,Morning,0,0,0,0
+Python,Python|Web Development|Data Structures,1,Practical,Discussion,Evening,Afternoon,1,0,0,0
+DBMS,Cloud Computing|DBMS|Data Structures,3,Discussion,Discussion,Afternoon,Evening,1,1,0,1
+Cloud Computing,Java|Cloud Computing|SQL|Data Structures,4,Practical,Practical,Morning,Morning,1,1,1,1
+Cloud Computing,Data Structures,1,Practical,Discussion,Evening,Evening,0,0,1,0
+SQL,Cloud Computing,1,Discussion,Discussion,Morning,Afternoon,0,1,0,0
+Data Structures,Web Development|SQL|Cloud Computing,5,Visual,Visual,Afternoon,Morning,0,1,0,0
+SQL,Data Structures|Cloud Computing|Java|Web Development,2,Reading,Practical,Afternoon,Afternoon,0,0,1,0
+DBMS,Data Structures|Java|Web Development|Cloud Computing,5,Discussion,Discussion,Evening,Morning,0,1,0,0
+Data Structures,Data Structures|Web Development|Cloud Computing,5,Reading,Reading,Afternoon,Morning,1,1,0,0
+Java,Cloud Computing|SQL,3,Visual,Reading,Afternoon,Morning,0,0,0,0
+SQL,SQL|Java|Python|Web Development,2,Reading,Visual,Evening,Morning,1,0,0,0
+Java,Python|Java|Web Development,3,Visual,Discussion,Evening,Afternoon,1,0,0,0
+Data Structures,Java|DBMS|Data Structures,5,Visual,Reading,Afternoon,Evening,1,0,0,1
+Web Development,Cloud Computing,4,Visual,Practical,Afternoon,Afternoon,0,0,1,0
+Cloud Computing,Python|Web Development|SQL,3,Discussion,Practical,Afternoon,Evening,0,0,0,0
+Cloud Computing,Cloud Computing,5,Practical,Reading,Afternoon,Morning,1,0,0,1
+Web Development,Cloud Computing|Python|Web Development|Java,5,Visual,Reading,Afternoon,Morning,1,0,0,1
+Web Development,Data Structures|Python|SQL|Java,3,Reading,Discussion,Evening,Evening,0,0,1,0
+Data Structures,SQL|Web Development|DBMS|Data Structures,5,Practical,Visual,Evening,Evening,1,0,1,1
+Python,Python|DBMS|Data Structures|SQL,5,Discussion,Visual,Evening,Morning,1,0,0,1
+Python,Python|DBMS,3,Discussion,Discussion,Afternoon,Morning,1,1,0,1
+Cloud Computing,SQL|Cloud Computing|Python|DBMS,5,Practical,Discussion,Morning,Morning,1,0,1,1
+Java,Cloud Computing|SQL,4,Discussion,Discussion,Afternoon,Evening,0,1,0,0
+Python,SQL|Python,1,Reading,Reading,Evening,Evening,1,1,1,1
+Cloud Computing,DBMS,4,Visual,Visual,Morning,Afternoon,0,1,0,0
+Cloud Computing,Data Structures,3,Visual,Discussion,Evening,Morning,0,0,0,0
+Web Development,Web Development,5,Reading,Discussion,Morning,Morning,1,0,1,1
+Cloud Computing,SQL|Web Development|Data Structures,2,Discussion,Practical,Morning,Morning,0,0,1,0
+SQL,Data Structures|SQL|Web Development|Java,4,Reading,Visual,Afternoon,Evening,1,0,0,1
+DBMS,SQL|Python,3,Discussion,Reading,Afternoon,Morning,0,0,0,0
+Web Development,Cloud Computing,1,Practical,Reading,Evening,Afternoon,0,0,0,0
+DBMS,Cloud Computing|DBMS|Java,5,Practical,Discussion,Afternoon,Morning,1,0,0,1
+Data Structures,SQL|Java|Python,3,Practical,Practical,Afternoon,Evening,0,1,0,0
+Cloud Computing,Cloud Computing|Java|SQL|DBMS,4,Discussion,Discussion,Afternoon,Evening,1,1,0,1
+Cloud Computing,Cloud Computing,2,Reading,Visual,Afternoon,Afternoon,1,0,1,1
+Cloud Computing,Data Structures|DBMS|Java,1,Practical,Discussion,Evening,Morning,0,0,0,1
+Python,SQL|Web Development|Java,1,Practical,Practical,Evening,Evening,0,1,1,0
+Cloud Computing,Cloud Computing|Web Development,4,Reading,Discussion,Afternoon,Evening,1,0,0,1
+Python,Cloud Computing|SQL|Python,1,Discussion,Reading,Morning,Afternoon,1,0,0,0
+Cloud Computing,Java|Cloud Computing,5,Practical,Visual,Afternoon,Morning,1,0,0,1
+Cloud Computing,Java|Data Structures,5,Discussion,Reading,Morning,Morning,0,0,1,0
+Python,Java,5,Discussion,Discussion,Evening,Afternoon,0,1,0,0
+DBMS,Python|SQL,3,Discussion,Discussion,Morning,Afternoon,0,1,0,0
+Web Development,Cloud Computing|SQL,2,Discussion,Practical,Afternoon,Morning,0,0,0,1
+SQL,Web Development|Data Structures,2,Reading,Discussion,Morning,Morning,0,0,1,0
+Cloud Computing,DBMS|Data Structures|Python,4,Discussion,Reading,Morning,Morning,0,0,1,0
+Java,Python|Data Structures|SQL,5,Visual,Visual,Afternoon,Evening,0,1,0,0
+SQL,DBMS|SQL|Python|Java,5,Practical,Reading,Morning,Evening,1,0,0,1
+SQL,Python|Java|SQL|Data Structures,2,Reading,Visual,Afternoon,Morning,1,0,0,0
+Data Structures,DBMS|SQL|Data Structures,3,Reading,Reading,Evening,Afternoon,1,1,0,1
+Python,DBMS|Data Structures|Python,5,Discussion,Visual,Morning,Morning,1,0,1,0
+Python,Data Structures,3,Practical,Discussion,Afternoon,Morning,0,0,0,0
+Data Structures,Data Structures,3,Discussion,Discussion,Afternoon,Morning,1,1,0,1
+Cloud Computing,Java|SQL,1,Practical,Reading,Morning,Morning,0,0,1,0
+Cloud Computing,Web Development|DBMS|Cloud Computing,2,Visual,Practical,Afternoon,Morning,1,0,0,0
+Data Structures,SQL,1,Reading,Visual,Afternoon,Afternoon,0,0,1,0
+Java,Python|Java|DBMS,4,Discussion,Discussion,Evening,Afternoon,1,1,0,1
+Java,Java|DBMS|Web Development,4,Reading,Practical,Morning,Morning,1,0,1,1
+SQL,Cloud Computing|Java|DBMS,5,Discussion,Visual,Afternoon,Afternoon,0,0,1,0
+Cloud Computing,Java|Cloud Computing|Python|Web Development,4,Discussion,Reading,Evening,Evening,1,0,1,1
+SQL,Cloud Computing|Data Structures|SQL|Python,3,Visual,Reading,Evening,Morning,1,0,0,0
+Data Structures,SQL|Web Development|DBMS|Data Structures,1,Discussion,Reading,Evening,Morning,1,0,0,0
+Data Structures,Java,5,Reading,Discussion,Evening,Morning,0,0,0,0
+DBMS,Data Structures|Web Development,5,Visual,Reading,Afternoon,Afternoon,0,0,1,0
+Cloud Computing,SQL|Python|DBMS|Cloud Computing,2,Discussion,Reading,Evening,Morning,1,0,0,0
+Java,Web Development,4,Discussion,Visual,Afternoon,Evening,0,0,0,0
+Cloud Computing,SQL|Cloud Computing|Web Development,1,Visual,Visual,Evening,Evening,1,1,1,1
+Cloud Computing,Cloud Computing|Data Structures,1,Visual,Discussion,Evening,Afternoon,1,0,0,0
+DBMS,Cloud Computing|DBMS|Data Structures|SQL,3,Practical,Practical,Morning,Morning,1,1,1,1
+Web Development,Cloud Computing|DBMS|Java,4,Visual,Visual,Afternoon,Morning,0,1,0,1
+DBMS,Data Structures|DBMS|Cloud Computing|Web Development,3,Reading,Discussion,Afternoon,Morning,1,0,0,0
+Java,Java|Cloud Computing,2,Visual,Practical,Afternoon,Evening,1,0,0,0
+Python,Cloud Computing|DBMS|Web Development|Python,1,Reading,Discussion,Morning,Afternoon,1,0,0,0
+Java,Python|DBMS,4,Discussion,Discussion,Morning,Afternoon,0,1,0,0
+Python,Web Development|Data Structures|Java,3,Visual,Visual,Evening,Evening,0,1,1,0
+Data Structures,DBMS|Web Development|Cloud Computing|SQL,1,Discussion,Discussion,Afternoon,Evening,0,1,0,0
+Web Development,Python|DBMS|Java|Web Development,4,Reading,Visual,Afternoon,Evening,1,0,0,1
+Data Structures,Data Structures,5,Reading,Discussion,Evening,Afternoon,1,0,0,0
+SQL,Data Structures|SQL,4,Practical,Practical,Evening,Evening,1,1,1,1
+Web Development,Python|SQL|Data Structures|Web Development,3,Discussion,Practical,Evening,Morning,1,0,0,0
+DBMS,DBMS,4,Practical,Practical,Morning,Morning,1,1,1,1
+Java,Data Structures|SQL|Python|Web Development,5,Visual,Visual,Afternoon,Afternoon,0,1,1,1
+Python,Cloud Computing|Web Development,1,Visual,Reading,Afternoon,Morning,0,0,0,0
+Java,Data Structures|SQL,3,Reading,Visual,Evening,Afternoon,0,0,0,0
+Cloud Computing,DBMS,1,Discussion,Discussion,Morning,Morning,0,1,1,0
+Web Development,Cloud Computing,5,Visual,Visual,Morning,Evening,0,1,0,0
+Python,Python|DBMS|SQL,4,Discussion,Visual,Morning,Evening,1,0,0,1
+Cloud Computing,Java|Python,4,Discussion,Visual,Morning,Afternoon,0,0,0,0
+Web Development,Java|SQL,3,Discussion,Reading,Evening,Evening,0,0,1,0
+Cloud Computing,Cloud Computing|Python|DBMS|Data Structures,4,Discussion,Discussion,Evening,Evening,1,1,1,1
+Java,Python|Java|Web Development|DBMS,1,Reading,Reading,Afternoon,Morning,1,1,0,1
+Data Structures,DBMS,2,Visual,Reading,Afternoon,Afternoon,0,0,1,0
+DBMS,DBMS|Cloud Computing|SQL,3,Visual,Reading,Evening,Evening,1,0,1,1
+DBMS,Data Structures|DBMS|Python|Cloud Computing,3,Discussion,Practical,Afternoon,Morning,1,0,0,1
+SQL,DBMS|Cloud Computing|Python|SQL,2,Visual,Reading,Evening,Afternoon,1,0,0,0
+Python,Java,5,Reading,Practical,Afternoon,Evening,0,0,0,0
+Web Development,DBMS,1,Reading,Reading,Evening,Evening,0,1,1,0
+Java,Data Structures,3,Visual,Discussion,Afternoon,Morning,0,0,0,0
+Web Development,SQL|Cloud Computing,3,Practical,Discussion,Evening,Evening,0,0,1,0
+SQL,Cloud Computing|SQL,4,Visual,Practical,Evening,Afternoon,1,0,0,1
+Java,Java,4,Practical,Discussion,Morning,Afternoon,1,0,0,1
+DBMS,Web Development|Cloud Computing|DBMS|Data Structures,3,Discussion,Discussion,Afternoon,Evening,1,1,0,1
+Data Structures,Cloud Computing|Python|DBMS|Web Development,4,Discussion,Practical,Evening,Evening,0,0,1,0
+Java,Data Structures|Cloud Computing,1,Practical,Reading,Morning,Evening,0,0,0,0
+Java,SQL,5,Reading,Visual,Evening,Morning,0,0,0,0
+SQL,SQL|Cloud Computing|Data Structures,1,Practical,Practical,Evening,Afternoon,1,1,0,0
+SQL,Python|Cloud Computing|Data Structures,1,Visual,Reading,Morning,Morning,0,0,1,0
+Web Development,Web Development|Data Structures|SQL,4,Discussion,Practical,Morning,Evening,1,0,0,1
+Cloud Computing,DBMS|Data Structures|Python|SQL,1,Discussion,Discussion,Morning,Afternoon,0,1,0,0
+Java,DBMS|SQL|Java|Python,1,Reading,Visual,Evening,Evening,1,0,1,1
+Web Development,Web Development,5,Practical,Discussion,Evening,Morning,1,0,0,1
+Web Development,Java|SQL,2,Practical,Discussion,Morning,Evening,0,0,0,0
+Data Structures,Data Structures,1,Reading,Discussion,Morning,Afternoon,1,0,0,1
+Web Development,Data Structures|SQL|Java,1,Visual,Practical,Afternoon,Morning,0,0,0,0
+Cloud Computing,Python,3,Discussion,Practical,Morning,Evening,0,0,0,0
+Python,DBMS,1,Reading,Discussion,Morning,Afternoon,0,0,0,0
+SQL,Data Structures|Java|DBMS,2,Practical,Practical,Afternoon,Evening,0,1,0,0
+Data Structures,SQL,1,Reading,Discussion,Evening,Afternoon,0,0,0,0
+Java,DBMS|Python|Java|SQL,5,Visual,Practical,Evening,Evening,1,0,1,1
+SQL,Data Structures|Java|Web Development|Python,2,Reading,Practical,Morning,Evening,0,0,0,0
+Web Development,Java|Cloud Computing|Data Structures|SQL,2,Visual,Visual,Afternoon,Afternoon,0,1,1,0
+Cloud Computing,SQL|DBMS|Python|Cloud Computing,1,Practical,Visual,Afternoon,Morning,1,0,0,0
+Java,DBMS|Web Development,3,Discussion,Practical,Evening,Evening,0,0,1,0
+SQL,DBMS|SQL|Data Structures,3,Practical,Reading,Afternoon,Morning,1,0,0,0
+Web Development,Java|DBMS|Python,1,Discussion,Visual,Morning,Evening,0,0,0,0
+Web Development,Cloud Computing|Data Structures|Web Development|Java,1,Visual,Discussion,Evening,Morning,1,0,0,0
+Cloud Computing,Cloud Computing|Web Development|SQL|Data Structures,2,Visual,Visual,Afternoon,Afternoon,1,1,1,1
+Data Structures,Python,1,Reading,Reading,Morning,Morning,0,1,1,0
+DBMS,Cloud Computing|DBMS|Python,2,Discussion,Reading,Morning,Afternoon,1,0,0,0
+DBMS,Java|Python,4,Visual,Reading,Evening,Evening,0,0,1,0
+Web Development,DBMS|Cloud Computing,5,Practical,Visual,Evening,Morning,0,0,0,0
+Python,Web Development|Python|Cloud Computing,3,Practical,Visual,Evening,Evening,1,0,1,1
+SQL,Java|Data Structures|Cloud Computing|SQL,4,Discussion,Reading,Morning,Evening,1,0,0,1
+Data Structures,Web Development|Java|Python,1,Reading,Discussion,Evening,Afternoon,0,0,0,0
+Data Structures,SQL|Java,5,Visual,Practical,Evening,Afternoon,0,0,0,0
+Python,Python|SQL,3,Visual,Visual,Morning,Afternoon,1,1,0,1
+Java,Cloud Computing|SQL|Python,1,Discussion,Practical,Afternoon,Morning,0,0,0,0
+Web Development,Java|Web Development,5,Discussion,Visual,Evening,Afternoon,1,0,0,1
+Java,Java,4,Reading,Visual,Morning,Morning,1,0,1,1
+Data Structures,SQL,5,Discussion,Visual,Morning,Evening,0,0,0,1
+Java,Cloud Computing|Data Structures|DBMS,1,Discussion,Practical,Evening,Evening,0,0,1,0
+Data Structures,Data Structures|Cloud Computing|Web Development|Java,3,Visual,Discussion,Evening,Afternoon,1,0,0,0
+Java,Java,5,Visual,Practical,Evening,Morning,1,0,0,1
+SQL,Data Structures|Cloud Computing|Web Development,4,Practical,Practical,Morning,Morning,0,1,1,0
+SQL,Web Development|DBMS|SQL|Cloud Computing,5,Practical,Practical,Afternoon,Afternoon,1,1,1,1
+SQL,Java|Web Development|DBMS,2,Visual,Practical,Evening,Evening,0,0,1,0
+Data Structures,Python|Cloud Computing|DBMS,1,Reading,Practical,Evening,Afternoon,0,0,0,0
+Data Structures,Cloud Computing|Web Development|DBMS,3,Reading,Discussion,Afternoon,Morning,0,0,0,0
+Cloud Computing,Data Structures,2,Visual,Practical,Evening,Morning,0,0,0,0
+Python,Data Structures|DBMS,3,Discussion,Practical,Afternoon,Morning,0,0,0,0
+Java,Java|Cloud Computing|SQL,1,Visual,Practical,Afternoon,Afternoon,1,0,1,1
+Web Development,Java|Cloud Computing|Python,2,Reading,Practical,Morning,Afternoon,0,0,0,0
+SQL,Python|Cloud Computing,1,Practical,Reading,Morning,Morning,0,0,1,0
+Python,DBMS|Java|SQL|Python,3,Discussion,Practical,Afternoon,Afternoon,1,0,1,1
+Web Development,DBMS|Java|Cloud Computing|Python,2,Practical,Practical,Evening,Afternoon,0,1,0,0
+SQL,DBMS|Python|Java|Cloud Computing,5,Reading,Practical,Afternoon,Morning,0,0,0,1
+Cloud Computing,Cloud Computing|Python|Web Development,5,Discussion,Practical,Evening,Morning,1,0,0,1
+Cloud Computing,Python,5,Discussion,Reading,Afternoon,Evening,0,0,0,0
+SQL,Web Development|DBMS|Data Structures,4,Discussion,Reading,Evening,Afternoon,0,0,0,0
+Cloud Computing,Python,2,Practical,Discussion,Morning,Afternoon,0,0,0,0
+Data Structures,Web Development|Python|SQL|Cloud Computing,5,Visual,Practical,Morning,Afternoon,0,0,0,0
+SQL,Web Development|Java,4,Reading,Discussion,Afternoon,Afternoon,0,0,1,0
+SQL,SQL|Cloud Computing|Data Structures|Java,2,Discussion,Practical,Afternoon,Evening,1,0,0,0
+Java,Cloud Computing|Web Development|DBMS,5,Visual,Reading,Morning,Morning,0,0,1,0
+SQL,Web Development,2,Reading,Practical,Evening,Afternoon,0,0,0,0
+DBMS,Python|DBMS|Web Development,2,Reading,Visual,Afternoon,Afternoon,1,0,1,1
+Cloud Computing,Data Structures|Web Development|Java|Cloud Computing,5,Practical,Discussion,Morning,Morning,1,0,1,1
+Python,Python|Web Development|DBMS|Data Structures,4,Reading,Visual,Afternoon,Morning,1,0,0,1
+DBMS,Python|Data Structures|DBMS|Java,3,Practical,Practical,Afternoon,Evening,1,1,0,0
+Cloud Computing,SQL|Python|Data Structures,4,Discussion,Reading,Afternoon,Evening,0,0,0,1
+Cloud Computing,Python,2,Reading,Discussion,Afternoon,Morning,0,0,0,0
+Java,Python|Data Structures|Java|SQL,5,Discussion,Reading,Morning,Morning,1,0,1,1
+Web Development,Java|DBMS,5,Discussion,Visual,Morning,Morning,0,0,1,0
+Data Structures,Python|Cloud Computing|SQL,5,Visual,Discussion,Morning,Afternoon,0,0,0,0
+Python,Cloud Computing|Data Structures|DBMS,2,Visual,Practical,Evening,Afternoon,0,0,0,0
+Java,Cloud Computing|Python|DBMS|Web Development,3,Discussion,Discussion,Morning,Evening,0,1,0,0
+SQL,Web Development|DBMS,4,Reading,Practical,Morning,Morning,0,0,1,0
+Cloud Computing,Web Development|Python|Cloud Computing|SQL,5,Discussion,Discussion,Afternoon,Evening,1,1,0,0
+Java,DBMS|Data Structures|SQL,3,Discussion,Practical,Afternoon,Morning,0,0,0,0
+Web Development,Data Structures|Cloud Computing|Python|Java,4,Visual,Practical,Morning,Afternoon,0,0,0,0
+Web Development,DBMS|Java|Python,4,Discussion,Visual,Afternoon,Morning,0,0,0,0
+Web Development,Data Structures|Cloud Computing|Python,3,Practical,Visual,Afternoon,Morning,0,0,0,0
+DBMS,Data Structures|SQL|Cloud Computing|Python,4,Visual,Visual,Afternoon,Morning,0,1,0,0
+Python,DBMS|Cloud Computing|Data Structures,4,Discussion,Visual,Morning,Evening,0,0,0,0
+DBMS,Python|Data Structures|SQL|Cloud Computing,2,Visual,Visual,Morning,Afternoon,0,1,0,0
+DBMS,Python|Java|DBMS|SQL,2,Discussion,Reading,Morning,Morning,1,0,1,1
+DBMS,Data Structures|DBMS,1,Visual,Discussion,Evening,Afternoon,1,0,0,0
+Web Development,Java,4,Practical,Practical,Afternoon,Morning,0,1,0,0
+Java,Java|Cloud Computing|SQL|Python,1,Practical,Visual,Evening,Morning,1,0,0,0
+Java,Web Development|Java|SQL|Cloud Computing,5,Practical,Practical,Evening,Afternoon,1,1,0,1
+Java,Python|Java,3,Reading,Practical,Morning,Afternoon,1,0,0,0
+Java,Python|Data Structures|Cloud Computing|Java,3,Reading,Visual,Morning,Morning,1,0,1,1
+Cloud Computing,Java|DBMS|Web Development|Python,3,Visual,Reading,Evening,Evening,0,0,1,0
+Cloud Computing,SQL|Python,3,Discussion,Visual,Afternoon,Morning,0,0,0,0
+Web Development,Data Structures|Web Development|Python|Java,2,Visual,Visual,Afternoon,Morning,1,1,0,1
+Cloud Computing,Web Development|Java,1,Practical,Reading,Afternoon,Afternoon,0,0,1,0
+Data Structures,DBMS|Java,2,Discussion,Reading,Morning,Afternoon,0,0,0,0
+Cloud Computing,Web Development,4,Reading,Visual,Morning,Evening,0,0,0,0
+Python,Web Development|Java,2,Practical,Discussion,Evening,Afternoon,0,0,0,0
+DBMS,Java,4,Visual,Practical,Morning,Evening,0,0,0,0
+Python,Java|Python,5,Practical,Practical,Evening,Morning,1,1,0,1
+Data Structures,Python|DBMS|Cloud Computing,2,Discussion,Practical,Evening,Morning,0,0,0,0
+Web Development,DBMS|Python|SQL|Data Structures,1,Reading,Discussion,Afternoon,Morning,0,0,0,0
+Data Structures,Cloud Computing|Python|Data Structures|Java,4,Discussion,Visual,Afternoon,Evening,1,0,0,1
+Web Development,SQL|Data Structures,4,Reading,Discussion,Afternoon,Afternoon,0,0,1,0
+Data Structures,SQL,2,Discussion,Practical,Morning,Morning,0,0,1,1
+Cloud Computing,Data Structures|Cloud Computing|DBMS,4,Reading,Discussion,Afternoon,Afternoon,1,0,1,1
+Web Development,Data Structures,1,Visual,Discussion,Evening,Morning,0,0,0,0
+Data Structures,Cloud Computing|DBMS|SQL,5,Discussion,Reading,Evening,Morning,0,0,0,0
+Data Structures,Python|Data Structures,1,Reading,Visual,Evening,Evening,1,0,1,1
+SQL,DBMS|Python|SQL|Cloud Computing,5,Practical,Visual,Morning,Morning,1,0,1,1
+Data Structures,DBMS|Web Development|Java|Python,4,Practical,Discussion,Afternoon,Evening,0,0,0,0
+Web Development,Web Development|SQL|Data Structures|Java,1,Reading,Practical,Afternoon,Evening,1,0,0,0
+DBMS,DBMS|SQL|Java|Python,4,Visual,Visual,Morning,Evening,1,1,0,1
+Data Structures,DBMS|Data Structures|Python,2,Reading,Practical,Evening,Morning,1,0,0,0
+Python,Data Structures,5,Practical,Practical,Morning,Morning,0,1,1,1
+Cloud Computing,SQL|Data Structures,4,Visual,Practical,Morning,Afternoon,0,0,0,0
+Java,Java|SQL|Cloud Computing,5,Practical,Discussion,Afternoon,Evening,1,0,0,1
+Java,SQL,1,Visual,Visual,Morning,Evening,0,1,0,0
+Data Structures,Data Structures|Cloud Computing|SQL,5,Discussion,Reading,Afternoon,Evening,1,0,0,1
+SQL,SQL|DBMS,4,Discussion,Visual,Afternoon,Afternoon,1,0,1,1
+Java,Cloud Computing|DBMS|Data Structures|Python,1,Visual,Reading,Evening,Morning,0,0,0,0
+Web Development,Web Development|Data Structures|Python|Java,3,Visual,Reading,Morning,Evening,1,0,0,0
+Data Structures,Web Development|Data Structures,4,Visual,Reading,Afternoon,Afternoon,1,0,1,1
+Cloud Computing,DBMS,4,Reading,Practical,Evening,Morning,0,0,0,0
+Web Development,Python,4,Visual,Reading,Evening,Evening,0,0,1,0
+Data Structures,Data Structures|Java,4,Practical,Practical,Morning,Morning,1,1,1,1
+DBMS,Java,4,Visual,Practical,Afternoon,Afternoon,0,0,1,0
+Python,DBMS|Data Structures|Java,2,Discussion,Visual,Evening,Afternoon,0,0,0,0
+Web Development,DBMS,3,Discussion,Discussion,Evening,Evening,0,1,1,0
+Cloud Computing,Cloud Computing|Python|DBMS|SQL,1,Reading,Visual,Morning,Morning,1,0,1,1
+Web Development,DBMS|Java,5,Reading,Practical,Afternoon,Afternoon,0,0,1,0
+Java,Java|Web Development|DBMS,2,Discussion,Discussion,Afternoon,Afternoon,1,1,1,1
+Cloud Computing,Web Development|DBMS,5,Practical,Visual,Afternoon,Morning,0,0,0,0
+Data Structures,Python|SQL|Cloud Computing,4,Discussion,Practical,Evening,Afternoon,0,0,0,0
+DBMS,Web Development,3,Reading,Visual,Afternoon,Evening,0,0,0,0
+DBMS,Data Structures|SQL,4,Visual,Reading,Morning,Evening,0,0,0,0
+DBMS,DBMS|Cloud Computing,1,Practical,Discussion,Evening,Afternoon,1,0,0,0
+Cloud Computing,Java|Web Development,4,Reading,Discussion,Evening,Afternoon,0,0,0,0
+Cloud Computing,Data Structures|Java|Web Development|SQL,3,Practical,Discussion,Morning,Morning,0,0,1,0
+Cloud Computing,Cloud Computing,3,Discussion,Practical,Evening,Morning,1,0,0,0
+Data Structures,Python|Cloud Computing|DBMS,2,Visual,Reading,Evening,Evening,0,0,1,0
+Cloud Computing,Data Structures|Cloud Computing,2,Visual,Visual,Afternoon,Afternoon,1,1,1,1
+Java,Web Development,3,Discussion,Practical,Evening,Evening,0,0,1,0
+Java,Python,4,Discussion,Reading,Evening,Evening,0,0,1,0
+DBMS,Cloud Computing|DBMS|Java|Data Structures,4,Reading,Discussion,Afternoon,Morning,1,0,0,1
+Java,Data Structures,5,Practical,Visual,Evening,Evening,0,0,1,0
+Data Structures,DBMS|Cloud Computing|Java,5,Practical,Discussion,Afternoon,Evening,0,0,0,0
+SQL,Java|SQL,1,Practical,Discussion,Evening,Morning,1,0,0,0
+Cloud Computing,Java|Web Development|DBMS|Cloud Computing,2,Visual,Practical,Evening,Evening,1,0,1,1
+Web Development,Cloud Computing|SQL|Java|Web Development,2,Practical,Practical,Morning,Evening,1,1,0,1
+Cloud Computing,Java,1,Reading,Reading,Evening,Morning,0,1,0,0
+DBMS,Python,3,Visual,Reading,Evening,Evening,0,0,1,0
+Web Development,DBMS|SQL|Web Development|Cloud Computing,5,Practical,Visual,Evening,Morning,1,0,0,1
+Python,SQL|Python,2,Practical,Reading,Afternoon,Morning,1,0,0,0
+Data Structures,Web Development,3,Reading,Discussion,Evening,Morning,0,0,0,0
+Java,DBMS|Data Structures|Python,5,Practical,Visual,Evening,Evening,0,0,1,0
+DBMS,DBMS|SQL,5,Practical,Discussion,Morning,Afternoon,1,0,0,1
+Data Structures,Java|Web Development|Python|Cloud Computing,3,Visual,Visual,Evening,Evening,0,1,1,0
+SQL,SQL,3,Reading,Practical,Morning,Afternoon,1,0,0,1
+Data Structures,Data Structures|Java,1,Practical,Reading,Evening,Afternoon,1,0,0,0
+SQL,Web Development|SQL|Cloud Computing,1,Visual,Practical,Afternoon,Afternoon,1,0,1,1
+Cloud Computing,Data Structures|Web Development|Python|SQL,1,Practical,Practical,Morning,Afternoon,0,1,0,0
+SQL,DBMS,3,Practical,Discussion,Evening,Afternoon,0,0,0,0
+SQL,Web Development|SQL|DBMS|Data Structures,5,Practical,Reading,Evening,Morning,1,0,0,1
+Data Structures,Cloud Computing|Java|DBMS,1,Practical,Visual,Morning,Evening,0,0,0,1
+DBMS,Web Development|Data Structures|Java,4,Practical,Discussion,Afternoon,Evening,0,0,0,0
+DBMS,Data Structures,1,Practical,Visual,Evening,Afternoon,0,0,0,0
+DBMS,Python|DBMS|Web Development,5,Visual,Discussion,Morning,Evening,1,0,0,1
+Cloud Computing,Python|Java,3,Practical,Reading,Morning,Afternoon,0,0,0,0
+Python,Java|SQL|Python,5,Visual,Reading,Afternoon,Afternoon,1,0,1,1
+Python,DBMS,5,Discussion,Practical,Afternoon,Evening,0,0,0,0
+Java,Web Development|Data Structures|Java|SQL,1,Discussion,Reading,Afternoon,Afternoon,1,0,1,1
+SQL,Data Structures|SQL,1,Visual,Discussion,Afternoon,Morning,1,0,0,0
+Web Development,Data Structures|Java,4,Visual,Practical,Evening,Afternoon,0,0,0,0
+Data Structures,SQL|Cloud Computing|Data Structures,2,Reading,Visual,Afternoon,Evening,1,0,0,0
+Python,SQL|DBMS,4,Visual,Reading,Evening,Morning,0,0,0,0
+SQL,Python,4,Discussion,Reading,Morning,Morning,0,0,1,0
+Data Structures,Java|Data Structures|DBMS,5,Discussion,Practical,Afternoon,Afternoon,1,0,1,1
+DBMS,Python|Java|DBMS|Web Development,2,Practical,Reading,Evening,Morning,1,0,0,0
+Python,DBMS,3,Discussion,Visual,Afternoon,Afternoon,0,0,1,0
+Data Structures,Cloud Computing,4,Practical,Practical,Evening,Evening,0,1,1,0
+SQL,Cloud Computing,3,Practical,Discussion,Morning,Afternoon,0,0,0,0
+Cloud Computing,DBMS,5,Practical,Practical,Evening,Evening,0,1,1,1
+Python,Python,4,Visual,Reading,Morning,Morning,1,0,1,1
+Web Development,Java|Cloud Computing,4,Discussion,Reading,Evening,Evening,0,0,1,0
+Python,Data Structures|Cloud Computing|Java,5,Discussion,Visual,Afternoon,Morning,0,0,0,0
+SQL,DBMS|Data Structures|Python,3,Visual,Practical,Morning,Morning,0,0,1,1
+DBMS,Python|SQL|Data Structures,3,Visual,Discussion,Morning,Afternoon,0,0,0,0
+SQL,SQL|Java|DBMS,1,Practical,Reading,Afternoon,Evening,1,0,0,0
+DBMS,Python|DBMS|SQL,2,Discussion,Visual,Morning,Morning,1,0,1,1
+Web Development,Java,5,Practical,Practical,Evening,Afternoon,0,1,0,0
+Java,SQL|DBMS|Data Structures,2,Practical,Visual,Morning,Morning,0,0,1,0
+DBMS,Cloud Computing|Web Development|SQL,3,Discussion,Visual,Afternoon,Morning,0,0,0,0
+Web Development,Python,5,Reading,Practical,Afternoon,Morning,0,0,0,0
+Java,DBMS|Data Structures,4,Visual,Practical,Afternoon,Evening,0,0,0,0
+Cloud Computing,Data Structures|Web Development|SQL|Python,2,Visual,Practical,Evening,Morning,0,0,0,0
+Java,Web Development|DBMS|Cloud Computing|SQL,3,Practical,Reading,Evening,Afternoon,0,0,0,0
+Python,Java|Web Development,2,Reading,Visual,Evening,Morning,0,0,0,0
+SQL,SQL|Java,2,Practical,Visual,Morning,Evening,1,0,0,0
+Web Development,SQL|Java|Web Development,3,Practical,Discussion,Evening,Afternoon,1,0,0,0
+Java,Cloud Computing,3,Practical,Reading,Morning,Afternoon,0,0,0,0
+Web Development,DBMS,4,Reading,Practical,Afternoon,Morning,0,0,0,0
+Python,Python|Data Structures|Cloud Computing|DBMS,3,Practical,Discussion,Morning,Afternoon,1,0,0,0
+Python,Python|Web Development,4,Practical,Reading,Morning,Afternoon,1,0,0,1
+Python,DBMS|Web Development|Python|Java,2,Visual,Discussion,Morning,Afternoon,1,0,0,0
+Data Structures,DBMS,5,Practical,Visual,Evening,Morning,0,0,0,0
+Java,Cloud Computing,1,Visual,Practical,Morning,Morning,0,0,1,0
+DBMS,Cloud Computing,1,Visual,Reading,Evening,Morning,0,0,0,0
+Data Structures,Cloud Computing|Python|SQL|Web Development,4,Practical,Practical,Morning,Evening,0,1,0,0
+DBMS,Java,1,Visual,Reading,Morning,Evening,0,0,0,0
+Data Structures,Java|Python,1,Practical,Discussion,Afternoon,Morning,0,0,0,0
+SQL,DBMS|Data Structures,1,Discussion,Practical,Morning,Morning,0,0,1,0
+SQL,Java|Web Development|SQL,1,Reading,Visual,Morning,Evening,1,0,0,0
+Data Structures,Web Development|Python|Data Structures,2,Reading,Reading,Afternoon,Morning,1,1,0,1
+Data Structures,SQL|DBMS|Java,1,Practical,Practical,Afternoon,Morning,0,1,0,0
+DBMS,Cloud Computing|Java|DBMS|Data Structures,3,Practical,Visual,Afternoon,Morning,1,0,0,0
+Data Structures,SQL|Data Structures|DBMS,4,Discussion,Reading,Morning,Evening,1,0,0,1
+Data Structures,Web Development|Data Structures|Cloud Computing|DBMS,5,Practical,Discussion,Morning,Evening,1,0,0,1
+Web Development,DBMS|Java,2,Reading,Visual,Morning,Morning,0,0,1,0
+Data Structures,Java|Cloud Computing,3,Reading,Practical,Afternoon,Afternoon,0,0,1,0
+Cloud Computing,Python|Cloud Computing|DBMS|Java,2,Visual,Practical,Afternoon,Evening,1,0,0,1
+Data Structures,Java|DBMS|Cloud Computing,5,Visual,Discussion,Evening,Morning,0,0,0,1
+SQL,Java|Python,1,Visual,Discussion,Morning,Morning,0,0,1,0
+Python,Data Structures|Cloud Computing|SQL,4,Visual,Reading,Morning,Morning,0,0,1,0
+DBMS,Web Development,2,Practical,Visual,Afternoon,Afternoon,0,0,1,0
+Data Structures,Web Development|Cloud Computing|SQL,2,Discussion,Practical,Afternoon,Morning,0,0,0,0
+Python,Data Structures|Web Development,1,Practical,Discussion,Morning,Evening,0,0,0,0
+Web Development,Cloud Computing,4,Discussion,Reading,Evening,Evening,0,0,1,0
+Data Structures,Java|SQL,4,Practical,Reading,Morning,Morning,0,0,1,0
+Web Development,Java|Python|SQL,2,Visual,Visual,Morning,Evening,0,1,0,1
+SQL,Web Development|Python,1,Practical,Reading,Morning,Evening,0,0,0,0
+Web Development,Java|Cloud Computing|SQL|DBMS,3,Visual,Reading,Afternoon,Afternoon,0,0,1,0
+SQL,DBMS|SQL|Python|Java,3,Discussion,Visual,Evening,Morning,1,0,0,1
+Cloud Computing,Data Structures|Web Development|Java|SQL,2,Practical,Discussion,Morning,Evening,0,0,0,0
+DBMS,Python|DBMS,2,Practical,Reading,Afternoon,Morning,1,0,0,0
+SQL,Java|DBMS|Data Structures|Python,2,Visual,Practical,Evening,Evening,0,0,1,0
+Java,Python,3,Visual,Discussion,Morning,Afternoon,0,0,0,0
+SQL,Java|SQL,5,Reading,Reading,Morning,Morning,1,1,1,1
+Cloud Computing,SQL|Data Structures|Cloud Computing|DBMS,2,Visual,Discussion,Morning,Afternoon,1,0,0,0
+Data Structures,Cloud Computing|Web Development|Python|Data Structures,3,Reading,Reading,Morning,Evening,1,1,0,1
+Data Structures,DBMS|Java|Web Development,1,Practical,Visual,Morning,Morning,0,0,1,0
+Python,Cloud Computing|Java|Python|Data Structures,4,Visual,Reading,Afternoon,Afternoon,1,0,1,1
+Cloud Computing,Java|Cloud Computing|Python|DBMS,4,Discussion,Practical,Afternoon,Afternoon,1,0,1,1
+SQL,Python|DBMS|Data Structures|Java,3,Discussion,Visual,Evening,Morning,0,0,0,0
+Python,SQL|Web Development,1,Discussion,Visual,Afternoon,Afternoon,0,0,1,0
+Python,Python,1,Discussion,Reading,Afternoon,Evening,1,0,0,0
+Python,SQL,4,Visual,Reading,Evening,Afternoon,0,0,0,0
+Web Development,DBMS|SQL,2,Visual,Visual,Afternoon,Afternoon,0,1,1,0
+SQL,Python|SQL,4,Discussion,Discussion,Evening,Evening,1,1,1,1
+DBMS,SQL|DBMS|Web Development|Data Structures,1,Practical,Visual,Evening,Evening,1,0,1,1
+Python,DBMS|Cloud Computing|SQL,1,Practical,Discussion,Morning,Afternoon,0,0,0,0
+Java,SQL|Web Development|Java|Data Structures,2,Discussion,Visual,Morning,Morning,1,0,1,1
+Python,DBMS|Web Development|Python|Data Structures,2,Reading,Practical,Morning,Evening,1,0,0,0
+Java,Cloud Computing|SQL|Java,3,Reading,Visual,Evening,Afternoon,1,0,0,0
+Data Structures,Data Structures|SQL|DBMS|Cloud Computing,5,Reading,Visual,Morning,Afternoon,1,0,0,1
+Python,Web Development|Data Structures,4,Reading,Discussion,Evening,Afternoon,0,0,0,0
+Cloud Computing,Java,1,Visual,Visual,Evening,Afternoon,0,1,0,0
+DBMS,DBMS,4,Visual,Reading,Afternoon,Morning,1,0,0,1
+Data Structures,Java|Python|Data Structures|Cloud Computing,3,Discussion,Discussion,Evening,Evening,1,1,1,1
+Data Structures,SQL,2,Reading,Reading,Evening,Afternoon,0,1,0,0
+Cloud Computing,DBMS|Python|Java|Data Structures,1,Visual,Visual,Morning,Afternoon,0,1,0,0
+Web Development,SQL|Python|Web Development,4,Practical,Discussion,Morning,Evening,1,0,0,1
+Cloud Computing,Cloud Computing,5,Discussion,Practical,Evening,Afternoon,1,0,0,1
+Python,SQL|Web Development|Python|Data Structures,2,Visual,Practical,Evening,Morning,1,0,0,0
+Cloud Computing,Cloud Computing|DBMS|SQL|Python,3,Practical,Visual,Morning,Morning,1,0,1,1
+DBMS,Java|Web Development,5,Visual,Discussion,Morning,Evening,0,0,0,0
+Data Structures,Python|Cloud Computing|DBMS,3,Practical,Practical,Evening,Afternoon,0,1,0,0
+DBMS,SQL,1,Practical,Visual,Evening,Evening,0,0,1,0
+Java,Web Development|Java|DBMS|Python,3,Reading,Practical,Morning,Morning,1,0,1,1
+SQL,Data Structures|Java,4,Visual,Discussion,Morning,Afternoon,0,0,0,0
+Java,DBMS|Data Structures,4,Reading,Discussion,Morning,Morning,0,0,1,0
+Python,Java,3,Reading,Discussion,Evening,Evening,0,0,1,0
+Python,Java|Python|Web Development,1,Visual,Practical,Morning,Afternoon,1,0,0,0
+Python,SQL,2,Practical,Visual,Evening,Evening,0,0,1,0
+SQL,Data Structures|Python|Java,3,Reading,Discussion,Evening,Afternoon,0,0,0,0
+Data Structures,SQL|Python,2,Reading,Discussion,Morning,Evening,0,0,0,0
+Web Development,Python|Cloud Computing|Data Structures,4,Discussion,Discussion,Evening,Evening,0,1,1,0
+SQL,Web Development,4,Discussion,Practical,Evening,Afternoon,0,0,0,0
+DBMS,Data Structures,2,Visual,Reading,Evening,Afternoon,0,0,0,0
+Cloud Computing,Data Structures|Java|DBMS,2,Reading,Discussion,Morning,Afternoon,0,0,0,0
+Python,SQL|Python|Cloud Computing,1,Visual,Reading,Evening,Morning,1,0,0,0
+Python,Web Development|SQL|Python|Java,4,Reading,Practical,Evening,Morning,1,0,0,1
+SQL,Web Development,4,Discussion,Reading,Afternoon,Morning,0,0,0,0
+Cloud Computing,Data Structures|Java|SQL|Cloud Computing,1,Visual,Discussion,Morning,Evening,1,0,0,0
+Data Structures,Web Development|Java,3,Visual,Visual,Afternoon,Afternoon,0,1,1,0
+Data Structures,Web Development,5,Visual,Reading,Evening,Morning,0,0,0,0
+Java,DBMS|SQL|Cloud Computing|Web Development,3,Discussion,Visual,Evening,Afternoon,0,0,0,0
+Java,SQL|DBMS|Data Structures|Web Development,1,Reading,Visual,Morning,Morning,0,0,1,1
+Java,Java|SQL,4,Practical,Practical,Morning,Morning,1,1,1,1
+Cloud Computing,Cloud Computing|Web Development|Java,1,Reading,Visual,Morning,Morning,1,0,1,1
+Java,SQL|DBMS|Web Development,4,Reading,Practical,Morning,Evening,0,0,0,0
+Python,Cloud Computing|Python|Web Development,4,Discussion,Visual,Evening,Evening,1,0,1,1
+Data Structures,SQL|Cloud Computing|Data Structures|Python,1,Reading,Reading,Evening,Morning,1,1,0,1
+Cloud Computing,DBMS|Cloud Computing,2,Visual,Visual,Afternoon,Morning,1,1,0,1
+DBMS,Data Structures|Cloud Computing,2,Discussion,Visual,Afternoon,Morning,0,0,0,0
+Cloud Computing,Cloud Computing|SQL|Data Structures,2,Visual,Practical,Morning,Afternoon,1,0,0,0
+Data Structures,Cloud Computing|Data Structures,2,Visual,Reading,Afternoon,Morning,1,0,0,0
+Cloud Computing,Python,4,Visual,Visual,Morning,Morning,0,1,1,0
+Python,Java|Data Structures|Web Development,4,Reading,Reading,Morning,Evening,0,1,0,0
+Data Structures,Python|Data Structures,5,Discussion,Reading,Morning,Afternoon,1,0,0,1
+Java,DBMS,4,Discussion,Practical,Afternoon,Morning,0,0,0,0
+Web Development,Web Development|Cloud Computing|Data Structures,5,Discussion,Visual,Evening,Morning,1,0,0,1
+Java,Java|Cloud Computing,1,Reading,Practical,Morning,Evening,1,0,0,0
+Python,Data Structures|Cloud Computing|Java|Python,3,Discussion,Practical,Morning,Morning,1,0,1,1
+SQL,DBMS|Java|Cloud Computing,2,Discussion,Reading,Evening,Morning,0,0,0,0
+DBMS,Python,2,Reading,Discussion,Morning,Morning,0,0,1,0
+Data Structures,Java|Python|SQL,1,Practical,Visual,Evening,Afternoon,0,0,0,0
+Web Development,Data Structures,2,Discussion,Visual,Morning,Morning,0,0,1,0
+SQL,Web Development|Cloud Computing,2,Practical,Visual,Morning,Afternoon,0,0,0,0
+SQL,Data Structures|DBMS|SQL|Web Development,4,Reading,Reading,Afternoon,Morning,1,1,0,1
+SQL,Web Development|DBMS|Cloud Computing,4,Visual,Reading,Evening,Evening,0,0,1,0
+Java,Data Structures|Python,2,Reading,Discussion,Morning,Morning,0,0,1,0
+DBMS,SQL|Python|Java|DBMS,4,Visual,Reading,Evening,Evening,1,0,1,1
+Data Structures,SQL|DBMS,3,Reading,Discussion,Evening,Afternoon,0,0,0,0
+SQL,Python|Java|Web Development,5,Reading,Visual,Afternoon,Afternoon,0,0,1,0
+Cloud Computing,SQL|Java|DBMS,4,Practical,Discussion,Evening,Morning,0,0,0,0
+SQL,SQL|Data Structures,3,Visual,Reading,Morning,Afternoon,1,0,0,1
+SQL,Java,4,Reading,Visual,Afternoon,Afternoon,0,0,1,0
+Java,SQL,2,Reading,Reading,Evening,Evening,0,1,1,0
+Web Development,Java|DBMS,3,Practical,Practical,Afternoon,Evening,0,1,0,0
+SQL,Java|Data Structures,3,Practical,Discussion,Afternoon,Afternoon,0,0,1,0
+Java,SQL|Web Development|Cloud Computing,2,Discussion,Reading,Evening,Morning,0,0,0,0
+Python,Python|Data Structures|Web Development,2,Reading,Reading,Morning,Afternoon,1,1,0,1
+DBMS,Web Development|Python|Data Structures|Cloud Computing,1,Practical,Discussion,Evening,Afternoon,0,0,0,0
+DBMS,Data Structures|SQL|Cloud Computing,4,Discussion,Discussion,Afternoon,Morning,0,1,0,0
+Java,Java|Python|Web Development|SQL,2,Reading,Practical,Evening,Evening,1,0,1,1
+SQL,Cloud Computing,4,Practical,Discussion,Evening,Morning,0,0,0,0
+Cloud Computing,Cloud Computing|Java|DBMS|Web Development,3,Visual,Reading,Evening,Morning,1,0,0,0
+Web Development,DBMS|SQL|Java|Web Development,5,Visual,Practical,Evening,Morning,1,0,0,1
+Data Structures,Python|DBMS,2,Reading,Reading,Evening,Morning,0,1,0,0
+Web Development,Java|Cloud Computing,1,Practical,Visual,Evening,Morning,0,0,0,0
+Java,Java|Web Development|Data Structures|DBMS,1,Visual,Reading,Afternoon,Afternoon,1,0,1,1
+Cloud Computing,Cloud Computing|Web Development,3,Discussion,Visual,Afternoon,Morning,1,0,0,0
+Python,Cloud Computing|DBMS,2,Practical,Practical,Afternoon,Afternoon,0,1,1,0
+DBMS,Web Development,4,Reading,Reading,Afternoon,Afternoon,0,1,1,0
+Java,Data Structures|Cloud Computing|Python|Java,3,Discussion,Visual,Evening,Afternoon,1,0,0,1
+SQL,DBMS,5,Discussion,Visual,Afternoon,Morning,0,0,0,0
+DBMS,SQL|Java|Python|Cloud Computing,5,Practical,Reading,Evening,Evening,0,0,1,0
+Java,DBMS|Python,3,Reading,Discussion,Evening,Morning,0,0,0,0
+Cloud Computing,Data Structures|Java|Cloud Computing,4,Discussion,Practical,Evening,Evening,1,0,1,1
+Cloud Computing,Python|DBMS|SQL,5,Reading,Discussion,Morning,Morning,0,0,1,1
+DBMS,Python|Java,1,Discussion,Discussion,Afternoon,Morning,0,1,0,0
+Cloud Computing,Java|Python,4,Discussion,Visual,Morning,Evening,0,0,0,0
+Java,Data Structures,3,Visual,Practical,Afternoon,Morning,0,0,0,0
+Data Structures,DBMS|Web Development,5,Practical,Practical,Afternoon,Afternoon,0,1,1,1
+SQL,Python|DBMS,2,Discussion,Practical,Morning,Evening,0,0,0,1
+DBMS,Python,1,Practical,Visual,Afternoon,Afternoon,0,0,1,0
+Cloud Computing,SQL,2,Discussion,Practical,Morning,Evening,0,0,0,0
+Web Development,SQL|Web Development|DBMS,2,Visual,Discussion,Afternoon,Evening,1,0,0,0
+Java,Python,5,Reading,Visual,Morning,Afternoon,0,0,0,0
+Web Development,Java|Python|SQL,3,Discussion,Reading,Morning,Morning,0,0,1,0
+Java,Cloud Computing|Web Development,5,Reading,Discussion,Evening,Morning,0,0,0,0
+Java,SQL|DBMS|Java|Web Development,3,Discussion,Reading,Morning,Afternoon,1,0,0,0
+Java,Python|Web Development,3,Visual,Practical,Afternoon,Morning,0,0,0,0
+Web Development,SQL,1,Discussion,Visual,Evening,Afternoon,0,0,0,0
+SQL,Java,1,Discussion,Practical,Evening,Afternoon,0,0,0,0
+SQL,Java|Cloud Computing,1,Practical,Discussion,Evening,Evening,0,0,1,0
+Web Development,Java|Data Structures|DBMS|Python,4,Discussion,Practical,Morning,Afternoon,0,0,0,0
+Web Development,SQL|Python|Cloud Computing,4,Visual,Practical,Morning,Morning,0,0,1,0
+Python,DBMS|Web Development|Cloud Computing|Java,1,Practical,Visual,Morning,Morning,0,0,1,0
+Python,Java|SQL|DBMS,5,Practical,Reading,Morning,Evening,0,0,0,0
+DBMS,DBMS,1,Visual,Reading,Evening,Morning,1,0,0,0
+DBMS,Cloud Computing|Python|Data Structures,3,Reading,Reading,Evening,Morning,0,1,0,0
+SQL,DBMS|Web Development|Cloud Computing,1,Visual,Reading,Afternoon,Evening,0,0,0,0
+Data Structures,Java|Python|DBMS,5,Practical,Reading,Evening,Evening,0,0,1,0

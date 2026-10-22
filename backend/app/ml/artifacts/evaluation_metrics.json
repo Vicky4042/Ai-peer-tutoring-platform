@@ -1,0 +1,49 @@
+{
+  "dataset_type": "synthetic",
+  "rows_total": 1200,
+  "training_rows": 960,
+  "testing_rows": 240,
+  "features": [
+    "subject_match",
+    "tutor_expertise_1_to_5",
+    "preference_match",
+    "availability_match"
+  ],
+  "algorithm": "RandomForestClassifier",
+  "hyperparameters": {
+    "n_estimators": 200,
+    "max_depth": 8,
+    "min_samples_leaf": 3,
+    "class_weight": "balanced",
+    "random_state": 42
+  },
+  "random_seed": 42,
+  "test_size": 0.2,
+  "accuracy": 0.9583,
+  "precision": 0.9839,
+  "recall": 0.8714,
+  "f1_score": 0.9242,
+  "confusion_matrix_labels_0_1": [
+    [
+      169,
+      1
+    ],
+    [
+      9,
+      61
+    ]
+  ],
+  "feature_importances": {
+    "subject_match": 0.6317,
+    "tutor_expertise_1_to_5": 0.1402,
+    "preference_match": 0.114,
+    "availability_match": 0.1141
+  },
+  "class_0_is": "not a match according to synthetic labeling rule",
+  "class_1_is": "match according to synthetic labeling rule",
+  "dataset_sha256": "e84e2975d8511ca1314c7bf9ea0383108656255915c3a60c8f8dd8d91422bf10",
+  "sklearn_version": "1.8.0",
+  "pandas_version": "3.0.2",
+  "python_version": "3.12.3",
+  "warning": "These metrics do not establish real-world tutor-matching performance because the labels are synthetic."
+}

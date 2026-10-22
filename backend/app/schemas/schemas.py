@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Literal, Optional
 from pydantic import BaseModel, EmailStr, Field
 
 
@@ -60,11 +60,24 @@ class MatchBreakdown(BaseModel):
     availability_score: float
 
 
+
 class TutorMatchOut(BaseModel):
     tutor_id: int
     name: str
     subjects: List[str]
     teaching_preference: str
     availability: List[str]
+
+    # Original compatibility score (0-100)
     compatibility_score: float
     breakdown: MatchBreakdown
+
+    # Score used for ranking and display (0-100)
+    match_score: float
+    scoring_method: Literal["ml", "fallback"]
+
+    # ML prediction probability (0-1)
+    ml_match_probability: Optional[float] = None
+
+    # Reason for using fallback, if applicable
+    fallback_reason: Optional[str] = None

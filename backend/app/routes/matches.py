@@ -1,10 +1,11 @@
+
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
 from app.database import get_db
 from app.models.models import Learner, Tutor
 from app.schemas.schemas import TutorMatchOut
-from app.services.matching import rank_tutors
+from app.services.recommendation import recommend_tutors
 
 router = APIRouter(prefix="/api/matches", tags=["matches"])
 
@@ -38,7 +39,10 @@ def get_matches(learner_id: int, db: Session = Depends(get_db)):
     if not tutors:
         return []
 
-    ranked = rank_tutors(_learner_to_dict(learner), [_tutor_to_dict(t) for t in tutors])
+    ranked = recommend_tutors(
+        _learner_to_dict(learner),
+        [_tutor_to_dict(t) for t in tutors],
+    )
 
     return [
         {
@@ -49,6 +53,10 @@ def get_matches(learner_id: int, db: Session = Depends(get_db)):
             "availability": t["availability"],
             "compatibility_score": t["compatibility_score"],
             "breakdown": t["breakdown"],
+            "match_score": t["match_score"],
+            "scoring_method": t["scoring_method"],
+            "ml_match_probability": t["ml_match_probability"],
+            "fallback_reason": t["fallback_reason"],
         }
         for t in ranked
     ]
