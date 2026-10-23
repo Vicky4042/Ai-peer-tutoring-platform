@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import '../models/tutor.dart';
 import '../services/api_service.dart';
@@ -17,7 +18,6 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
   @override
   void initState() {
     super.initState();
-    // All data here comes from the FastAPI backend — nothing is hardcoded.
     _future = ApiService.getRecommendations(widget.learnerId);
   }
 
@@ -31,36 +31,115 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return const Center(child: CircularProgressIndicator());
           }
+
           if (snapshot.hasError) {
             return Center(
               child: Padding(
-                padding: const EdgeInsets.all(24.0),
-                child: Text("Could not load recommendations:\n${snapshot.error}",
-                    textAlign: TextAlign.center),
+                padding: const EdgeInsets.all(24),
+                child: Text(
+                  "Could not load recommendations:\n${snapshot.error}",
+                  textAlign: TextAlign.center,
+                ),
               ),
             );
           }
+
           final matches = snapshot.data ?? [];
+
           if (matches.isEmpty) {
-            return const Center(child: Text("No tutors found yet. Add some tutor profiles first."));
+            return const Center(
+              child: Text(
+                "No tutors found yet. Add some tutor profiles first.",
+              ),
+            );
           }
+
           return ListView.separated(
             padding: const EdgeInsets.all(16),
             itemCount: matches.length,
-            separatorBuilder: (_, __) => const Divider(),
+            separatorBuilder: (_, __) => const SizedBox(height: 8),
             itemBuilder: (context, index) {
               final m = matches[index];
+
+              final isMl = m.scoringMethod.toLowerCase() == 'ml';
+              final sourceLabel = isMl ? 'ML recommendation' : 'Fallback scorer';
+              final sourceColor = isMl ? Colors.blue : Colors.orange;
+
               return Card(
-                child: ListTile(
-                  title: Text(m.name, style: const TextStyle(fontWeight: FontWeight.bold)),
-                  subtitle: Text(
-                    "${m.subjects.join(', ')}\n"
-                    "${m.availability.join(', ')} • ${m.teachingPreference}",
-                  ),
-                  isThreeLine: true,
-                  trailing: Text(
-                    "${m.compatibilityScore.toStringAsFixed(0)}%",
-                    style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.green),
+                child: Padding(
+                  padding: const EdgeInsets.all(12),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          Expanded(
+                            child: Text(
+                              m.name,
+                              style: const TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 17,
+                              ),
+                            ),
+                          ),
+                          Text(
+                            '${m.matchScore.toStringAsFixed(1)}%',
+                            style: const TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.green,
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 8),
+                      Wrap(
+                        spacing: 6,
+                        runSpacing: 6,
+                        children: [
+                          Chip(
+                            avatar: Icon(
+                              isMl ? Icons.auto_awesome : Icons.rule,
+                              size: 16,
+                              color: sourceColor,
+                            ),
+                            label: Text(sourceLabel),
+                            visualDensity: VisualDensity.compact,
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 8),
+                      Text('Subjects: ${m.subjects.join(', ')}'),
+                      const SizedBox(height: 4),
+                      Text('Availability: ${m.availability.join(', ')}'),
+                      const SizedBox(height: 4),
+                      Text('Teaching preference: ${m.teachingPreference}'),
+
+                      if (isMl && m.mlMatchProbability != null) ...[
+                        const SizedBox(height: 8),
+                        Text(
+                          'ML probability: '
+                          '${(m.mlMatchProbability! * 100).toStringAsFixed(1)}%',
+                          style: TextStyle(
+                            color: Colors.grey.shade700,
+                            fontSize: 12,
+                          ),
+                        ),
+                      ],
+
+                      if (!isMl &&
+                          m.fallbackReason != null &&
+                          m.fallbackReason!.trim().isNotEmpty) ...[
+                        const SizedBox(height: 8),
+                        Text(
+                          'Fallback reason: ${m.fallbackReason}',
+                          style: TextStyle(
+                            color: Colors.grey.shade700,
+                            fontSize: 12,
+                          ),
+                        ),
+                      ],
+                    ],
                   ),
                 ),
               );

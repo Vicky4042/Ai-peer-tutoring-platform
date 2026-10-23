@@ -37,15 +37,27 @@ class Tutor {
       );
 }
 
+
 /// Result item returned by GET /api/matches/{learner_id}.
-/// This is a ranked tutor + its compatibility score — NOT a plain Tutor.
+/// Contains tutor details, compatibility breakdown, and ML scoring information.
 class TutorMatch {
   final int tutorId;
   final String name;
   final List<String> subjects;
   final String teachingPreference;
   final List<String> availability;
+
+  // Existing compatibility score
   final double compatibilityScore;
+
+  // New ML recommendation fields
+  final double matchScore;
+  final String scoringMethod;
+  final double? mlMatchProbability;
+  final String? fallbackReason;
+
+  // Score breakdown from the backend
+  final Map<String, dynamic> breakdown;
 
   TutorMatch({
     required this.tutorId,
@@ -54,14 +66,37 @@ class TutorMatch {
     required this.teachingPreference,
     required this.availability,
     required this.compatibilityScore,
+    required this.matchScore,
+    required this.scoringMethod,
+    this.mlMatchProbability,
+    this.fallbackReason,
+    required this.breakdown,
   });
 
-  factory TutorMatch.fromJson(Map<String, dynamic> json) => TutorMatch(
-        tutorId: json["tutor_id"],
-        name: json["name"],
-        subjects: List<String>.from(json["subjects"] ?? []),
-        teachingPreference: json["teaching_preference"],
-        availability: List<String>.from(json["availability"] ?? []),
-        compatibilityScore: (json["compatibility_score"] as num).toDouble(),
-      );
+  factory TutorMatch.fromJson(Map<String, dynamic> json) {
+    return TutorMatch(
+      tutorId: (json["tutor_id"] as num).toInt(),
+      name: json["name"] as String,
+      subjects: List<String>.from(json["subjects"] ?? []),
+      teachingPreference: json["teaching_preference"] as String,
+      availability: List<String>.from(json["availability"] ?? []),
+
+      compatibilityScore:
+          (json["compatibility_score"] as num).toDouble(),
+
+      matchScore: (json["match_score"] as num?)?.toDouble() ??
+          (json["compatibility_score"] as num).toDouble(),
+
+      scoringMethod: json["scoring_method"] as String? ?? "fallback",
+
+      mlMatchProbability:
+          (json["ml_match_probability"] as num?)?.toDouble(),
+
+      fallbackReason: json["fallback_reason"] as String?,
+
+      breakdown: Map<String, dynamic>.from(
+        json["breakdown"] ?? {},
+      ),
+    );
+  }
 }
