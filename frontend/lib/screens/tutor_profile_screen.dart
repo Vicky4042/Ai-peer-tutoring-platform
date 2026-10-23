@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../models/tutor.dart';
 import '../services/api_service.dart';
 import 'learner_profile_screen.dart' show kPreferences, kAvailabilitySlots;
+import 'sessions_screen.dart';
 
 class TutorProfileScreen extends StatefulWidget {
   const TutorProfileScreen({super.key});
@@ -42,13 +43,31 @@ class _TutorProfileScreenState extends State<TutorProfileScreen> {
         teachingPreference: _preference!,
         availability: _availability.toList(),
       );
-      await ApiService.createTutor(tutor);
+      final created = await ApiService.createTutor(tutor);
 
       if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text("Tutor profile saved successfully.")),
+      final manageSessions = await showDialog<bool>(
+        context: context,
+        builder: (dialogContext) => AlertDialog(
+          title: const Text("Tutor profile saved"),
+          content: Text("Your tutor ID is ${created.id}. Keep this ID to manage incoming session requests."),
+          actions: [
+            TextButton(onPressed: () => Navigator.pop(dialogContext, false), child: const Text("Done")),
+            FilledButton(
+              onPressed: () => Navigator.pop(dialogContext, true),
+              child: const Text("Manage sessions"),
+            ),
+          ],
+        ),
       );
-      Navigator.pop(context);
+      if (mounted && manageSessions == true) {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (_) => SessionsScreen(tutorId: created.id)),
+        );
+      } else if (mounted) {
+        Navigator.pop(context);
+      }
     } catch (e) {
       _showError("Could not save profile: $e");
     } finally {

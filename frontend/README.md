@@ -1,17 +1,15 @@
-# peer_tutoring_app
+# Flutter frontend
 
-A new Flutter project.
+## Start the app
 
-## Getting Started
+Run the FastAPI backend first (see the root `README.md`), then:
 
-This project is a starting point for a Flutter application.
+```powershell
+cd frontend
+flutter pub get
+flutter run -d chrome
+```
 
-A few resources to get you started if this is your first Flutter project:
+The app calls `http://127.0.0.1:8000` by default. For an Android emulator, change `ApiService.baseUrl` to `http://10.0.2.2:8000`.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The app includes learner/tutor profile creation, AI recommendations, session requests, learning materials, progress logging, session management, and post-session feedback.

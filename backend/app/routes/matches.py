@@ -44,11 +44,17 @@ def get_matches(learner_id: int, db: Session = Depends(get_db)):
         [_tutor_to_dict(t) for t in tutors],
     )
 
+    learner_subject_names = {subject.name.strip().lower() for subject in learner.subjects}
     return [
         {
             "tutor_id": t["tutor_id"],
             "name": t["name"],
             "subjects": t["subjects"],
+            "matched_subjects": sorted(
+                {subject.strip().lower(): subject.strip() for subject in t["subjects"]
+                 if subject.strip().lower() in learner_subject_names}.values(),
+                key=str.lower,
+            ),
             "teaching_preference": t["teaching_preference"],
             "availability": t["availability"],
             "compatibility_score": t["compatibility_score"],

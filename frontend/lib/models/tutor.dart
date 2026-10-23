@@ -44,6 +44,7 @@ class TutorMatch {
   final int tutorId;
   final String name;
   final List<String> subjects;
+  final List<String> matchedSubjects;
   final String teachingPreference;
   final List<String> availability;
 
@@ -63,6 +64,7 @@ class TutorMatch {
     required this.tutorId,
     required this.name,
     required this.subjects,
+    this.matchedSubjects = const [],
     required this.teachingPreference,
     required this.availability,
     required this.compatibilityScore,
@@ -78,6 +80,7 @@ class TutorMatch {
       tutorId: (json["tutor_id"] as num).toInt(),
       name: json["name"] as String,
       subjects: List<String>.from(json["subjects"] ?? []),
+      matchedSubjects: List<String>.from(json["matched_subjects"] ?? []),
       teachingPreference: json["teaching_preference"] as String,
       availability: List<String>.from(json["availability"] ?? []),
 

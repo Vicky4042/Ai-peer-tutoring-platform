@@ -1,174 +1,116 @@
-# AI-Based Peer Tutoring Matching Platform
+# AI Peer Tutoring Platform
 
-**Presidency University, Bengaluru — CSE7102 Mini Project — Review-2 (26-09-2026)**
+Flutter frontend and FastAPI backend for matching learners with peer tutors, discovering learning resources, requesting tutoring sessions, and tracking progress.
 
-Team: Vikas V (20231CSE0624), Shubhamkar Dash (20231CSE0611), Vikas A (20231CSE0547)
-Guide: Dr. Balakrishnan Raju
+## Features
 
-## Review-2 scope
+- Learner and tutor profiles with subject and availability information.
+- AI-based tutor recommendations with compatibility scores and an explicit fallback scorer.
+- Searchable, subject-filtered learning materials.
+- Session requests, tutor acceptance/rejection, completion, and cancellation.
+- Learner progress entries, session summaries, and post-completion feedback.
+- REST API documentation through FastAPI Swagger UI.
 
-This repository contains the **Review-2 implementation (~50% of the final project)**:
-a working end-to-end MVP that demonstrates
+## Requirements
 
-```
-Flutter (profile forms) → FastAPI → MySQL → compatibility matching → ranked
-tutor recommendations → Flutter (recommendation screen)
-```
+- Python 3.10 or newer (Python 3.12 recommended).
+- Flutter SDK and Chrome for the web frontend.
+- Optional: MySQL. The default local setup uses SQLite and does not require a database server.
 
-Session management, feedback, advanced ML, authentication, deployment and
-other features are **intentionally out of scope for Review-2** — see
-"Future Work" below.
+## Run the backend (PowerShell)
 
-## Repository structure
-
-```
-Ai-peer-tutoring-platform/
-├── backend/
-│   ├── app/
-│   │   ├── main.py              # FastAPI app entrypoint
-│   │   ├── database.py          # SQLAlchemy engine/session
-│   │   ├── models/models.py     # ORM models
-│   │   ├── schemas/schemas.py   # Pydantic request/response schemas
-│   │   ├── routes/              # learners.py, tutors.py, matches.py
-│   │   └── services/
-│   │       ├── matching.py      # compatibility scoring (pure Python)
-│   │       └── subjects.py      # get-or-create helper for Subject rows
-│   ├── sql/schema.sql           # MySQL schema
-│   ├── seed_data.py             # inserts 1 learner + 5 demo tutors
-│   ├── test_matching.py         # standalone tests for matching.py
-│   ├── requirements.txt
-│   └── .env.example
-├── frontend/                    # Flutter app
-│   ├── pubspec.yaml
-│   └── lib/
-│       ├── main.dart
-│       ├── models/               # Learner, Tutor, TutorMatch
-│       ├── services/api_service.dart
-│       └── screens/              # Home, LearnerProfile, TutorProfile, Recommendation
-└── README.md
-```
-
-## How the matching works (Review-2)
-
-`backend/app/services/matching.py` computes a **weighted compatibility
-score (0–100)**, not a trained ML model:
-
-| Factor                     | Weight |
-|-----------------------------|--------|
-| Subject/skill compatibility | 40%    |
-| Tutor expertise             | 25%    |
-| Learning preference match   | 20%    |
-| Availability overlap        | 15%    |
-
-Tutors are sorted by this score, highest first. The exact ML/recommendation
-algorithm is **not yet finalized** — see Future Work.
-
-## Setup & run instructions
-
-### 1. Backend (FastAPI + MySQL)
-
-```bash
+```powershell
 cd backend
-python3 -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-
-cp .env.example .env             # then edit .env with your local MySQL password
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+# Optional: copy .env.example to .env and configure DATABASE_URL.
+python -m uvicorn app.main:app --reload --port 8000
 ```
 
-Create the database (either let SQLAlchemy create tables automatically on
-first run, or apply the schema directly):
+The default database is `sqlite:///./peer_tutoring.db`, created in the `backend` folder. To use MySQL, set `DATABASE_URL` in `backend/.env` to a valid `mysql+pymysql://...` connection string.
 
-```bash
-mysql -u root -p < sql/schema.sql
+API documentation: http://127.0.0.1:8000/docs
+Health check: http://127.0.0.1:8000/health
+
+## Seed learning materials
+
+In a second terminal, from the `backend` directory with the virtual environment activated:
+
+```powershell
+python seed_resources.py
 ```
 
-Run the API:
+The seed is idempotent: running it repeatedly does not add duplicate URLs.
 
-```bash
-uvicorn app.main:app --reload --port 8000
-```
+## Run the Flutter frontend
 
-Visit `http://127.0.0.1:8000/docs` for interactive Swagger API docs.
+In a second terminal:
 
-Insert demo data (1 learner, 5 tutors):
-
-```bash
-python3 seed_data.py
-```
-
-### 2. Frontend (Flutter)
-
-```bash
+```powershell
 cd frontend
 flutter pub get
+flutter run -d chrome
 ```
 
-Before running, set the correct backend URL in `lib/services/api_service.dart`:
-- Android emulator → `http://10.0.2.2:8000` (already set as default)
-- iOS simulator / desktop / web on the same machine → `http://127.0.0.1:8000`
-- physical device → `http://<your-computer-LAN-IP>:8000`
+The web frontend defaults to `http://127.0.0.1:8000`. To override the backend URL without editing source, pass a Dart define:
 
-```bash
-flutter run
+```powershell
+# Android emulator
+flutter run --dart-define=API_BASE_URL=http://10.0.2.2:8000
+
+# Chrome (default can also be overridden)
+flutter run -d chrome --dart-define=API_BASE_URL=http://127.0.0.1:8000
 ```
 
-## Testing performed so far
+## Tests
 
-- `backend/test_matching.py` — standalone unit tests for the compatibility
-  scoring function (subject overlap, expertise scaling, preference
-  matching, availability overlap, and descending-order ranking). Run with:
-  ```bash
-  cd backend && python3 test_matching.py
-  ```
-  All tests pass in this environment (pure Python, no external
-  dependencies required).
-- The FastAPI endpoints and the Flutter screens have been written and
-  reviewed for correctness but **have not yet been run against a live
-  MySQL instance or a Flutter emulator**, since those require tools not
-  available in the environment this code was drafted in. Please run
-  the steps above locally and report any errors — see "What remains"
-  below.
+Backend:
 
-## Review-2 completion status
+```powershell
+cd backend
+.\.venv\Scripts\Activate.ps1
+python -m pytest -q
+```
 
-| Feature | Status | Evidence |
+Frontend:
+
+```powershell
+cd frontend
+flutter analyze
+flutter test
+```
+
+## Main API routes
+
+| Method | Route | Purpose |
 |---|---|---|
-| Flutter frontend | Completed (code) | 4 screens: Home, Learner Profile, Tutor Profile, Recommendations |
-| Learner profile | Completed (code) | Form + `POST /api/learners` + `learners`/`learner_subjects`/`learner_availability` tables |
-| Tutor profile | Completed (code) | Form + `POST /api/tutors` + `tutors`/`tutor_subjects`/`tutor_availability` tables |
-| Subject/skills | Completed (code) | Shared `subjects` reference table, get-or-create helper |
-| Learning preference | Completed (code) | Stored on learner/tutor, used in `preference_score()` |
-| Availability | Completed (code) | Stored as slots, used in `availability_overlap_score()` |
-| FastAPI | Completed (code) | `POST /api/learners`, `POST /api/tutors`, `GET /api/learners/{id}`, `GET /api/tutors`, `GET /api/matches/{learner_id}` |
-| MySQL | Schema completed | `sql/schema.sql`; not yet run against a live server in this environment |
-| Matching | Completed (code + tested) | `test_matching.py` passes; weighted compatibility score, not a trained model |
-| Ranking | Completed (code + tested) | `rank_tutors()` sorts descending, verified in tests |
-| Flutter–FastAPI connection | Implemented (code) | `ApiService` — not yet run end-to-end on a device/emulator |
+| GET | `/health` | Backend and ML availability |
+| POST / GET | `/api/learners` | Create learner / retrieve learner by ID |
+| POST / GET | `/api/tutors` | Create or list tutors |
+| GET | `/api/matches/{learner_id}` | Ranked tutor recommendations |
+| GET / POST | `/api/resources` | Search resources / add a resource |
+| GET / POST | `/api/sessions` | List / request sessions |
+| PATCH | `/api/sessions/{session_id}` | Accept, reject, complete or cancel a session |
+| POST | `/api/sessions/{session_id}/feedback` | Submit feedback after completion |
+| GET / POST | `/api/progress/{learner_id}` and `/api/progress` | Read / add learner progress |
+| GET | `/api/progress/{learner_id}/summary` | Progress summary |
 
-**Local verification still required by the team:** running `uvicorn`
-against a real MySQL database, running `flutter run` against a real
-emulator/device, and confirming the full Flutter → FastAPI → MySQL →
-matching → Flutter round trip end-to-end. Please run the steps above and
-report back any errors so they can be fixed before the review.
+## Demo flow
 
-## Limitations (Review-2)
+1. Start the backend and seed learning materials.
+2. Open the Flutter app in Chrome.
+3. Create a tutor profile and retain the tutor ID.
+4. Create a learner profile with at least one subject the tutor teaches.
+5. Open the recommendations and request a session with a future date/time.
+6. Open Manage Sessions, select Tutor, enter the tutor ID, and accept/reject the request.
+7. Mark an accepted session completed.
+8. Return to learner session management to submit feedback.
+9. Use the progress screen from recommendations to log a topic and view the summary.
 
-- The matching algorithm is a simple, explainable weighted score — not a
-  trained machine-learning model.
-- No real user testing has been conducted yet.
-- The backend/Flutter code has not yet been executed end-to-end against a
-  live MySQL instance or emulator in this environment (see above).
-- Sample data is for demonstration only (1 learner, 5 tutors) — not a
-  research dataset.
+## Important notes
 
-## Future Work (Part 2 / Final Review)
-
-- Advanced ML/recommendation techniques
-- Session management
-- Feedback collection and feedback-based recommendation improvement
-- Additional personalization features
-- User testing
-- Performance evaluation
-- Deployment and scalability
-- Authentication and other security hardening
+- The current prototype does not include authentication/authorization. Session role selection is for demonstration and is not secure for production use.
+- The ML model was trained using synthetic labels. Its output is not a validated prediction of real-world tutoring success.
+- Resource URLs are external learning resources; availability depends on the resource provider.
+- Database schema changes are created for fresh/local development databases. Existing production databases should use a migration strategy before deploying.

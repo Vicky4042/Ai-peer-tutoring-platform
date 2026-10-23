@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'learner_profile_screen.dart';
 import 'tutor_profile_screen.dart';
+import 'learning_materials_screen.dart';
+import 'sessions_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -22,7 +24,7 @@ class HomeScreen extends StatelessWidget {
               ),
               const SizedBox(height: 8),
               const Text(
-                "Review-2 prototype",
+                "Learn together. Grow together.",
                 style: TextStyle(color: Colors.grey),
               ),
               const SizedBox(height: 40),
@@ -33,6 +35,20 @@ class HomeScreen extends StatelessWidget {
                   MaterialPageRoute(builder: (_) => const LearnerProfileScreen()),
                 ),
                 child: const Text("I'm a Learner"),
+              ),
+              const SizedBox(height: 16),
+              OutlinedButton.icon(
+                icon: const Icon(Icons.menu_book),
+                style: OutlinedButton.styleFrom(minimumSize: const Size(240, 48)),
+                onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const LearningMaterialsScreen())),
+                label: const Text("Learning Materials"),
+              ),
+              const SizedBox(height: 12),
+              OutlinedButton.icon(
+                icon: const Icon(Icons.event),
+                style: OutlinedButton.styleFrom(minimumSize: const Size(240, 48)),
+                onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const SessionsScreen())),
+                label: const Text("Manage Sessions"),
               ),
               const SizedBox(height: 16),
               OutlinedButton(

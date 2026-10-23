@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.database import Base, engine
-from app.routes import learners, tutors, matches
+from app.routes import learners, tutors, matches, resources, sessions, progress
 
 # Creates tables if they don't exist yet. For Review-2 this is fine;
 # a migration tool (e.g. Alembic) is left for Part 2 / future work.
@@ -24,6 +24,9 @@ app.add_middleware(
 app.include_router(learners.router)
 app.include_router(tutors.router)
 app.include_router(matches.router)
+app.include_router(resources.router)
+app.include_router(sessions.router)
+app.include_router(progress.router)
 
 
 @app.get("/")
@@ -31,7 +34,7 @@ def root():
     return {
         "status": "ok",
         "service": "peer-tutoring-matching-api",
-        "stage": "Review-2 (approx. 50% implementation)",
+        "stage": "peer-learning MVP",
     }
 
 

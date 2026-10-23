@@ -76,3 +76,60 @@ class TutorAvailability(Base):
     slot = Column(String(50), nullable=False)
 
     tutor = relationship("Tutor", back_populates="availability")
+
+
+# ---------------------------------------------------------------
+# Learning resources, tutoring sessions, progress and feedback
+# ---------------------------------------------------------------
+from sqlalchemy import Text, DateTime, Float, UniqueConstraint
+
+class LearningResource(Base):
+    __tablename__ = "learning_resources"
+    id = Column(Integer, primary_key=True, index=True)
+    title = Column(String(200), nullable=False)
+    subject = Column(String(100), nullable=False, index=True)
+    description = Column(Text, nullable=False, default="")
+    resource_type = Column(String(40), nullable=False, default="Tutorial")
+    url = Column(String(1000), nullable=False)
+    created_at = Column(TIMESTAMP, server_default=func.now())
+
+
+class TutoringSession(Base):
+    __tablename__ = "tutoring_sessions"
+    id = Column(Integer, primary_key=True, index=True)
+    learner_id = Column(Integer, ForeignKey("learners.id", ondelete="CASCADE"), nullable=False, index=True)
+    tutor_id = Column(Integer, ForeignKey("tutors.id", ondelete="CASCADE"), nullable=False, index=True)
+    subject = Column(String(100), nullable=False)
+    topic = Column(String(200), nullable=False)
+    scheduled_at = Column(DateTime, nullable=False)
+    message = Column(Text, nullable=False, default="")
+    status = Column(String(20), nullable=False, default="pending", index=True)
+    tutor_response = Column(Text, nullable=False, default="")
+    created_at = Column(TIMESTAMP, server_default=func.now())
+    learner = relationship("Learner")
+    tutor = relationship("Tutor")
+    feedback = relationship("SessionFeedback", back_populates="session", uselist=False, cascade="all, delete-orphan")
+
+
+class ProgressEntry(Base):
+    __tablename__ = "progress_entries"
+    id = Column(Integer, primary_key=True, index=True)
+    learner_id = Column(Integer, ForeignKey("learners.id", ondelete="CASCADE"), nullable=False, index=True)
+    subject = Column(String(100), nullable=False)
+    topic = Column(String(200), nullable=False)
+    notes = Column(Text, nullable=False, default="")
+    completed = Column(Integer, nullable=False, default=0)
+    created_at = Column(TIMESTAMP, server_default=func.now())
+    learner = relationship("Learner")
+
+
+class SessionFeedback(Base):
+    __tablename__ = "session_feedback"
+    id = Column(Integer, primary_key=True, index=True)
+    session_id = Column(Integer, ForeignKey("tutoring_sessions.id", ondelete="CASCADE"), nullable=False, unique=True)
+    learner_id = Column(Integer, ForeignKey("learners.id", ondelete="CASCADE"), nullable=False)
+    rating = Column(Integer, nullable=False)
+    comment = Column(Text, nullable=False, default="")
+    created_at = Column(TIMESTAMP, server_default=func.now())
+    session = relationship("TutoringSession", back_populates="feedback")
+    learner = relationship("Learner")

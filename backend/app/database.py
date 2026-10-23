@@ -5,10 +5,13 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# Example: mysql+pymysql://root:password@localhost:3306/peer_tutoring_db
-DATABASE_URL = os.getenv("DATABASE_URL", "mysql+pymysql://root:password@localhost:3306/peer_tutoring_db")
-
-engine = create_engine(DATABASE_URL, pool_pre_ping=True)
+# SQLite makes the project runnable without a separate database server.
+# Set DATABASE_URL to a MySQL URL in .env if MySQL is preferred.
+DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./peer_tutoring.db")
+_engine_options = {"pool_pre_ping": True}
+if DATABASE_URL.startswith("sqlite"):
+    _engine_options["connect_args"] = {"check_same_thread": False}
+engine = create_engine(DATABASE_URL, **_engine_options)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 

@@ -7,7 +7,7 @@ import pytest
 pytest.importorskip("fastapi")
 pytest.importorskip("sqlalchemy")
 pytest.importorskip("httpx")
-pytest.importorskip("pymysql")  # app.database creates a MySQL engine object at import time
+
 
 from fastapi import FastAPI
 from fastapi.testclient import TestClient
@@ -74,6 +74,8 @@ def test_matches_endpoint_returns_ml_ranked_eligible_tutors(client):
         assert m["fallback_reason"] is None
         assert m["match_score"] == pytest.approx(m["ml_match_probability"] * 100, abs=0.01)
         assert "compatibility_score" in m and "breakdown" in m
+        assert m["matched_subjects"]
+        assert set(m["matched_subjects"]).issubset({"Java", "DSA"})
 
 
 def test_matches_endpoint_labels_fallback(client, monkeypatch, tmp_path):

@@ -1,7 +1,11 @@
 
+
 import 'package:flutter/material.dart';
 import '../models/tutor.dart';
 import '../services/api_service.dart';
+import 'learning_materials_screen.dart';
+import 'progress_screen.dart';
+import 'sessions_screen.dart';
 
 class RecommendationScreen extends StatefulWidget {
   final int learnerId;
@@ -21,15 +25,222 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
     _future = ApiService.getRecommendations(widget.learnerId);
   }
 
+  Future<void> _requestSession(TutorMatch tutor) async {
+    final topic = TextEditingController();
+    final message = TextEditingController();
+
+    DateTime scheduled = DateTime.now().add(const Duration(days: 1));
+
+    final subjectOptions = tutor.matchedSubjects.isNotEmpty
+        ? tutor.matchedSubjects
+        : tutor.subjects;
+
+    String? subject =
+        subjectOptions.isEmpty ? null : subjectOptions.first;
+
+    try {
+      final result = await showDialog<bool>(
+        context: context,
+        builder: (dialogContext) => StatefulBuilder(
+          builder: (context, setDialogState) => AlertDialog(
+            title: Text('Request session with ${tutor.name}'),
+            content: SingleChildScrollView(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  DropdownButtonFormField<String>(
+                    initialValue: subject,
+                    decoration: const InputDecoration(
+                      labelText: 'Subject',
+                    ),
+                    items: subjectOptions
+                        .map(
+                          (s) => DropdownMenuItem<String>(
+                            value: s,
+                            child: Text(s),
+                          ),
+                        )
+                        .toList(),
+                    onChanged: (v) =>
+                        setDialogState(() => subject = v),
+                  ),
+                  TextField(
+                    controller: topic,
+                    decoration: const InputDecoration(
+                      labelText: 'Topic to learn',
+                    ),
+                  ),
+                  TextField(
+                    controller: message,
+                    decoration: const InputDecoration(
+                      labelText: 'Message (optional)',
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  OutlinedButton.icon(
+                    icon: const Icon(Icons.calendar_today),
+                    label: Text(
+                      '${scheduled.year}-'
+                      '${scheduled.month.toString().padLeft(2, '0')}-'
+                      '${scheduled.day.toString().padLeft(2, '0')}',
+                    ),
+                    onPressed: () async {
+                      final d = await showDatePicker(
+                        context: context,
+                        initialDate: scheduled,
+                        firstDate: DateTime.now(),
+                        lastDate: DateTime.now().add(
+                          const Duration(days: 180),
+                        ),
+                      );
+
+                      if (d != null) {
+                        setDialogState(() {
+                          scheduled = DateTime(
+                            d.year,
+                            d.month,
+                            d.day,
+                            scheduled.hour,
+                            scheduled.minute,
+                          );
+                        });
+                      }
+                    },
+                  ),
+                  OutlinedButton.icon(
+                    icon: const Icon(Icons.access_time),
+                    label: Text(
+                      '${scheduled.hour.toString().padLeft(2, '0')}:'
+                      '${scheduled.minute.toString().padLeft(2, '0')}',
+                    ),
+                    onPressed: () async {
+                      final t = await showTimePicker(
+                        context: context,
+                        initialTime: TimeOfDay.fromDateTime(scheduled),
+                      );
+
+                      if (t != null) {
+                        setDialogState(() {
+                          scheduled = DateTime(
+                            scheduled.year,
+                            scheduled.month,
+                            scheduled.day,
+                            t.hour,
+                            t.minute,
+                          );
+                        });
+                      }
+                    },
+                  ),
+                ],
+              ),
+            ),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(dialogContext, false),
+                child: const Text('Cancel'),
+              ),
+              FilledButton(
+                onPressed: () => Navigator.pop(dialogContext, true),
+                child: const Text('Send request'),
+              ),
+            ],
+          ),
+        ),
+      );
+
+      if (result != true || !mounted) return;
+
+      if (topic.text.trim().length < 2 || subject == null) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Enter a topic and select a subject.'),
+          ),
+        );
+        return;
+      }
+
+      try {
+        await ApiService.createSession({
+          'learner_id': widget.learnerId,
+          'tutor_id': tutor.tutorId,
+          'subject': subject,
+          'topic': topic.text.trim(),
+          'scheduled_at': scheduled.toIso8601String(),
+          'message': message.text.trim(),
+        });
+
+        if (!mounted) return;
+
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text(
+              'Session request sent. Open Sessions to track its status.',
+            ),
+          ),
+        );
+      } catch (e) {
+        if (!mounted) return;
+
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('$e')),
+        );
+      }
+    } finally {
+      topic.dispose();
+      message.dispose();
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Recommended Tutors")),
+      appBar: AppBar(
+        title: const Text('Recommended Tutors'),
+        actions: [
+          IconButton(
+            tooltip: 'Learning materials',
+            icon: const Icon(Icons.menu_book),
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => const LearningMaterialsScreen(),
+              ),
+            ),
+          ),
+          IconButton(
+            tooltip: 'My progress',
+            icon: const Icon(Icons.trending_up),
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => ProgressScreen(
+                  learnerId: widget.learnerId,
+                ),
+              ),
+            ),
+          ),
+          IconButton(
+            tooltip: 'Sessions',
+            icon: const Icon(Icons.event),
+            onPressed: () => Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => SessionsScreen(
+                  learnerId: widget.learnerId,
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
       body: FutureBuilder<List<TutorMatch>>(
         future: _future,
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
-            return const Center(child: CircularProgressIndicator());
+            return const Center(
+              child: CircularProgressIndicator(),
+            );
           }
 
           if (snapshot.hasError) {
@@ -37,7 +248,7 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
               child: Padding(
                 padding: const EdgeInsets.all(24),
                 child: Text(
-                  "Could not load recommendations:\n${snapshot.error}",
+                  'Could not load recommendations:\n${snapshot.error}',
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -49,7 +260,7 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
           if (matches.isEmpty) {
             return const Center(
               child: Text(
-                "No tutors found yet. Add some tutor profiles first.",
+                'No tutors found yet. Add some tutor profiles first.',
               ),
             );
           }
@@ -62,7 +273,8 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
               final m = matches[index];
 
               final isMl = m.scoringMethod.toLowerCase() == 'ml';
-              final sourceLabel = isMl ? 'ML recommendation' : 'Fallback scorer';
+              final sourceLabel =
+                  isMl ? 'ML recommendation' : 'Fallback scorer';
               final sourceColor = isMl ? Colors.blue : Colors.orange;
 
               return Card(
@@ -111,10 +323,13 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
                       const SizedBox(height: 8),
                       Text('Subjects: ${m.subjects.join(', ')}'),
                       const SizedBox(height: 4),
-                      Text('Availability: ${m.availability.join(', ')}'),
+                      Text(
+                        'Availability: ${m.availability.join(', ')}',
+                      ),
                       const SizedBox(height: 4),
-                      Text('Teaching preference: ${m.teachingPreference}'),
-
+                      Text(
+                        'Teaching preference: ${m.teachingPreference}',
+                      ),
                       if (isMl && m.mlMatchProbability != null) ...[
                         const SizedBox(height: 8),
                         Text(
@@ -126,7 +341,6 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
                           ),
                         ),
                       ],
-
                       if (!isMl &&
                           m.fallbackReason != null &&
                           m.fallbackReason!.trim().isNotEmpty) ...[
@@ -139,6 +353,15 @@ class _RecommendationScreenState extends State<RecommendationScreen> {
                           ),
                         ),
                       ],
+                      const SizedBox(height: 8),
+                      Align(
+                        alignment: Alignment.centerRight,
+                        child: FilledButton.icon(
+                          onPressed: () => _requestSession(m),
+                          icon: const Icon(Icons.calendar_month),
+                          label: const Text('Request session'),
+                        ),
+                      ),
                     ],
                   ),
                 ),
